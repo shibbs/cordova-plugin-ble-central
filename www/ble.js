@@ -1,4 +1,4 @@
-// (c) 2014 Don Coleman
+cordova.define("cordova-plugin-ble-central.ble", function(require, exports, module) { // (c) 2014 Don Coleman
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -96,6 +96,12 @@ module.exports = {
     write: function (device_id, service_uuid, characteristic_uuid, value, success, failure) {
         cordova.exec(success, failure, 'BLE', 'write', [device_id, service_uuid, characteristic_uuid, value]);
     },
+    
+    // params is a fairly complicated array
+    uploadFirmware: function (successCallback, errorCallback, params) {
+        console.log("ble.js uploadFirmwareCall");
+        cordova.exec(successCallback,errorCallback, 'BLE', 'uploadFirmware', [params]);
+    },
 
     // value must be an ArrayBuffer
     writeWithoutResponse: function (device_id, service_uuid, characteristic_uuid, value, success, failure) {
@@ -135,9 +141,12 @@ module.exports = {
     enable: function (success, failure) {
         cordova.exec(success, failure, "BLE", "enable", []);
     },
+               
 
     showBluetoothSettings: function (success, failure) {
         cordova.exec(success, failure, "BLE", "showBluetoothSettings", []);
     }
 
 };
+
+});

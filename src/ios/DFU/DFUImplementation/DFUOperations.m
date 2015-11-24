@@ -522,5 +522,10 @@ andControlPointCharacteristic:(CBCharacteristic *)dfuControlPointCharacteristic
     [dfuDelegate onError:errorMessage];
 }
 
+- (void)handleDFUService:(CBService *)service error:(NSError *)error{
+    NSLog(@"dfuOperations handleDFUService");
+    [bleOperations handleDFUService: service : error];
+}
+
 @end
 

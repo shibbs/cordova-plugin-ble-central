@@ -146,11 +146,18 @@
     return NO;
 }
 
+
 -(void)parseManifestFile
 {
     NSData *data = [NSData dataWithContentsOfURL:self.manifestFileURL];
     self.manifestData = [[[JsonParser alloc]init] parseJson:data];
 }
+
+- (void)handleDFUService:(CBService *)service error:(NSError *)error{
+    NSLog(@"dfuHelper handleDFUService");
+    [self.dfuOperations handleDFUService : service :error]; //pass that shit through
+}
+
 
 -(void)getBinAndDatFilesAsMentionedInManfest:(NSArray *)firmwareFilesURL jsonParsedData:(NSArray *)jsonData
 {

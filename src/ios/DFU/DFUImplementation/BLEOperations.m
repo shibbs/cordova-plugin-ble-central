@@ -164,6 +164,41 @@ static NSString * const hrsSensorLocationCharacteristicUUIDString = @"00002A38-0
     }
 }
 
+- (void)handleDFUService:(CBService *)service error:(NSError *)error
+{
+    NSLog(@"bleOperations handleDFUService");
+    if ([service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]]) {
+        [self searchDFURequiredCharacteristics:service];
+        if (isDFUControlPointCharacteristic && isDFUPacketCharacteristicFound && isDFUVersionCharacteristicFound) {
+            [self.bluetoothPeripheral readValueForCharacteristic:self.dfuVersionCharacteristic];
+            [self.bleDelegate onDeviceConnectedWithVersion:self.bluetoothPeripheral
+                                  withPacketCharacteristic:self.dfuPacketCharacteristic
+                             andControlPointCharacteristic:self.dfuControlPointCharacteristic
+                                  andVersionCharacteristic:self.dfuVersionCharacteristic];            
+        }
+        else if (isDFUControlPointCharacteristic && isDFUPacketCharacteristicFound && isDFUVersionCharacteristicFound == NO) {
+            [self.bleDelegate onDeviceConnected:self.bluetoothPeripheral
+                       withPacketCharacteristic:self.dfuPacketCharacteristic
+                  andControlPointCharacteristic:self.dfuControlPointCharacteristic];
+        }
+        else {
+//            NSString *errorMessage = [NSString stringWithFormat:@"Error on discovering characteristics\n Message: Required DFU characteristics are not available on peripheral"];
+//            [self.centralManager cancelPeripheralConnection:peripheral];
+//            [self.bleDelegate onError:errorMessage];
+            NSLog(@"dfuHelper DIdn't find the characteristics");
+        }
+    }
+    else if ([service.UUID isEqual:HR_Service_UUID]) {
+        for (CBCharacteristic *characteristic in service.characteristics)
+        {
+            if ([characteristic.UUID isEqual:HR_Location_Characteristic_UUID]) {
+                NSLog(@"HR Position characteristic is found");
+                [self.bluetoothPeripheral readValueForCharacteristic:characteristic];
+            }
+        }
+    }
+}
+
 -(void) peripheral:(CBPeripheral *)peripheral didUpdateValueForCharacteristic:(CBCharacteristic *)characteristic error:(NSError *)error
 {
     NSLog(@"didUpdateValueForCharacteristic");

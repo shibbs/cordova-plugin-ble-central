@@ -57,6 +57,7 @@
 -(NSString *)getInitPacketFileValidationMessage;
 -(NSString *)getFileValidationMessage;
 -(DFUHelper *)initWithData:(DFUOperations *)dfuOperations;
+- (void)handleDFUService:(CBService *)service :(NSError *)error;
 
 
 @end

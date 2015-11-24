@@ -28,6 +28,7 @@
 
 @synthesize manager;
 @synthesize peripherals;
+@synthesize dfuOperations;
 
 - (void)pluginInitialize {
 
@@ -135,6 +136,30 @@
         }
     }
 
+}
+
+// uploadFirmware: function (successCallback, errorCallback, params) {
+/* parameter: {
+    'address': String, bluetooth address of the device (required)
+    'name': String, name of the device (required)
+    'filePath': String, absolut path of the file which should be uploaded (required*)
+    'fileUri': String, absolut path as an Uri, has to be encoded with encodeUri() (required*)
+    'fileType': Integer, type of uploaded file, see Android DFU Library for details (optional, default TYPE_APPLICATION)
+    'initFilePath': String, absolut path of the init file (optional*, default null which means no init file used)
+    'initFileUri': String, absolut path of the init file as an Uri, has to be encoded with encodeUri() (optional*)
+    'keepBond': Boolean, see Android DFU Library for details (optional, default false)
+}
+*/
+- (void)uploadFirmware:(CDVInvokedUrlCommand*)command {
+
+//    NSData *message = [command.arguments objectAtIndex:3]; // This is binary
+    NSLog(@"UploadFirmwareCalled");
+    
+    dfuOperations = [[DFUOperations alloc] initWithDelegate:self];
+    self.dfuHelper = [[DFUHelper alloc] initWithData:dfuOperations];
+    uploading = true;
+    [self.dfuHelper checkAndPerformDFU];
+    
 }
 
 // writeWithoutResponse: function (device_id, service_uuid, characteristic_uuid, value, success, failure) {
@@ -392,8 +417,14 @@
     NSString *connectCallbackId = [connectCallbacks valueForKey:peripheralUUIDString];
     NSMutableSet *latch = [connectCallbackLatches valueForKey:peripheralUUIDString];
 
+    if( [service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]  ]) {
+        NSLog(@"FOUND DFU CHARACTERISTICS");
+        [self.dfuHelper handleDFUService : service:  error];
+    }
+    
     [latch removeObject:service];
 
+    
     if ([latch count] == 0) {
         // Call success callback for connect
         if (connectCallbackId) {
@@ -660,5 +691,105 @@
 
     return @"Unknown state";
 }
+
+
+
+#pragma mark DFUOperations delegate methods
+
+bool uploading = false;
+
+-(void)onDeviceConnected:(CBPeripheral *)peripheral
+{
+    NSLog(@"main view onDeviceConnected %@",peripheral.name);
+    if( uploading ) {   //if we're reconnecting during an interrupted dfu operation, then just send the shit
+        [self.dfuHelper checkAndPerformDFU];
+    }
+    
+}
+
+-(void)onDeviceConnectedWithVersion:(CBPeripheral *)peripheral
+{
+    NSLog(@"onDeviceConnectedWithVersion %@",peripheral.name);
+
+    
+}
+
+-(void)onDeviceDisconnected:(CBPeripheral *)peripheral
+{
+    NSLog(@"hrmView device disconnected %@",peripheral.name);
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+
+//    [centralManager connectPeripheral:peripheral options:nil];
+}
+
+-(void)onReadDFUVersion:(int)version
+{
+    NSLog(@"onReadDFUVersion %d",version);
+    self.dfuHelper.dfuVersion = version;
+   NSLog(@"DFU Version: %d",self.dfuHelper.dfuVersion);
+
+}
+
+-(void)onDFUStarted
+{
+    NSLog(@"onDFUStarted");
+
+}
+
+-(void)onDFUCancelled
+{
+    NSLog(@"onDFUCancelled");
+
+}
+
+-(void)onSoftDeviceUploadStarted
+{
+    NSLog(@"onSoftDeviceUploadStarted");
+}
+
+-(void)onSoftDeviceUploadCompleted
+{
+    NSLog(@"onSoftDeviceUploadCompleted");
+}
+
+
+-(void)onAppUploadCompleted
+{
+    NSLog(@"onAppUploadCompleted");
+}
+
+
+-(void)onBootloaderUploadStarted
+{
+    NSLog(@"onBootloaderUploadStarted");
+    
+}
+
+-(void)onBootloaderUploadCompleted
+{
+    NSLog(@"onBootloaderUploadCompleted");
+
+}
+
+-(void)onTransferPercentage:(int)percentage
+{
+    NSLog(@"onTransferPercentage %d",percentage);
+
+}
+
+-(void)onSuccessfulFileTranferred
+{
+    NSLog(@"OnSuccessfulFileTransferred");
+    [self onTransferPercentage: 100];
+    uploading = false;
+}
+
+-(void)onError:(NSString *)errorMessage
+{
+    NSLog(@"OnError %@",errorMessage);
+
+}
+
+
 
 @end

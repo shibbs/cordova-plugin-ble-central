@@ -85,5 +85,6 @@
 -(void)performOldDFUOnFile:(NSURL *)firmwareURL;
 -(void)setAppToBootloaderMode;
 -(void)cancelDFU;
+-(void)handleDFUService:(CBService *)service :(NSError *)error;
 
 @end

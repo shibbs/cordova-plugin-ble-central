@@ -24,7 +24,9 @@
 #import "BLECommandContext.h"
 #import "CBPeripheral+Extensions.h"
 
-@interface BLECentralPlugin : CDVPlugin <CBCentralManagerDelegate, CBPeripheralDelegate> {
+#include "DFUHelper.h"
+
+@interface BLECentralPlugin : CDVPlugin <CBCentralManagerDelegate, CBPeripheralDelegate, DFUOperationsDelegate> {
     NSString* discoverPeripherialCallbackId;
     NSMutableDictionary* connectCallbacks;
     NSMutableDictionary *readCallbacks;
@@ -36,6 +38,10 @@
 
 @property (strong, nonatomic) NSMutableSet *peripherals;
 @property (strong, nonatomic) CBCentralManager *manager;
+
+//DFU stuff
+@property (strong, nonatomic) DFUHelper *dfuHelper; //create our dfu helper object
+@property (strong, nonatomic) DFUOperations *dfuOperations;
 
 - (void)scan:(CDVInvokedUrlCommand *)command;
 - (void)startScan:(CDVInvokedUrlCommand *)command;
