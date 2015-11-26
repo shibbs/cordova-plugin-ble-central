@@ -47,6 +47,7 @@
     connectCallbackLatches = [NSMutableDictionary new];
     readCallbacks = [NSMutableDictionary new];
     writeCallbacks = [NSMutableDictionary new];
+    dfuCallbacks = [NSMutableDictionary new];
     notificationCallbacks = [NSMutableDictionary new];
     stopNotificationCallbacks = [NSMutableDictionary new];
     
@@ -155,9 +156,11 @@
 }
 */
 - (void)uploadFirmware:(CDVInvokedUrlCommand*)command {
-
 //    NSData *message = [command.arguments objectAtIndex:3]; // This is binary
     NSLog(@"UploadFirmwareCalled");
+
+//    dfuCallbacks =[command.arguments objectAtIndex:0] ;
+    dfuCallbacks = [command.callbackId copy];
     
     [dfuOperations setCentralManager:manager]; //set the dfu operations as the central manager now
 //    [dfuOperations connectDevice:peripheral];
@@ -808,6 +811,12 @@ bool uploading = false;
 -(void)onTransferPercentage:(int)percentage
 {
     NSLog(@"onTransferPercentage %d",percentage);
+    if (dfuCallbacks) {
+        CDVPluginResult *pluginResult = nil;
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:percentage];
+        [pluginResult setKeepCallbackAsBool:TRUE];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
+    }
 
 }
 
@@ -816,6 +825,12 @@ bool uploading = false;
     NSLog(@"OnSuccessfulFileTransferred");
     [self onTransferPercentage: 100];
     uploading = false;
+    if (dfuCallbacks) {
+        CDVPluginResult *pluginResult = nil;
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:101 ];
+        [pluginResult setKeepCallbackAsBool:TRUE];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
+    }
     
 }
 

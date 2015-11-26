@@ -486,7 +486,7 @@ andControlPointCharacteristic:(CBCharacteristic *)dfuControlPointCharacteristic
 
 -(void)onTransferPercentage:(int)percentage
 {
-    NSLog(@"DFUOperations: onTransferPercentage %d",percentage);
+//    NSLog(@"DFUOperations: onTransferPercentage %d",percentage);
     [dfuDelegate onTransferPercentage:percentage];
 }
 
