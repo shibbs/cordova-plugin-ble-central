@@ -79,6 +79,9 @@ NSDate *startTime, *finishTime;
         [dfuDelegate onError:errorMessage];
     }
 }
+-(void)setPeripheral:(CBPeripheral *)peripheral {
+    [bleOperations setPeripheral:peripheral];
+}
 
 -(void)cancelDFU
 {
@@ -522,9 +525,9 @@ andControlPointCharacteristic:(CBCharacteristic *)dfuControlPointCharacteristic
     [dfuDelegate onError:errorMessage];
 }
 
-- (void)handleDFUService:(CBService *)service error:(NSError *)error{
+- (void)handleDFUService:(CBService *)service {
     NSLog(@"dfuOperations handleDFUService");
-    [bleOperations handleDFUService: service : error];
+    [bleOperations handleDFUService: service ];
 }
 
 @end

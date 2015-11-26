@@ -47,7 +47,7 @@
     NSArray * files = [fileSystem getFilesFromAppDirectory:@"firmwares"];
     NSString * selectedFileName = [files objectAtIndex:0]; //app.zip is at index 0 the way we have it set up
     
-//    NSLog(@" file anme is %@",selectedFileName);
+    NSLog(@" file name is %@",selectedFileName);
     
     NSString *filePath = [appDirectoryPath stringByAppendingPathComponent:selectedFileName];
     NSURL *url = [NSURL fileURLWithPath:filePath];
@@ -153,9 +153,12 @@
     self.manifestData = [[[JsonParser alloc]init] parseJson:data];
 }
 
-- (void)handleDFUService:(CBService *)service error:(NSError *)error{
+- (void)handleDFUService:(CBService *)service {
     NSLog(@"dfuHelper handleDFUService");
-    [self.dfuOperations handleDFUService : service :error]; //pass that shit through
+    [self.dfuOperations handleDFUService : service]; //pass that shit through
+}
+- (void)connectToPeripheral :(CBPeripheral *)peripheral{
+
 }
 
 

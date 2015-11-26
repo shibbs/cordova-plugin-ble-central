@@ -56,6 +56,12 @@ static NSString * const hrsSensorLocationCharacteristicUUIDString = @"00002A38-0
     [self.centralManager connectPeripheral:peripheral options:nil];
 }
 
+-(void)setPeripheral:(CBPeripheral *)peripheral
+{
+    self.bluetoothPeripheral = peripheral;
+}
+
+
 -(void)searchDFURequiredCharacteristics:(CBService *)service
 {
     isDFUControlPointCharacteristic = NO;
@@ -132,7 +138,7 @@ static NSString * const hrsSensorLocationCharacteristicUUIDString = @"00002A38-0
 
 - (void)peripheral:(CBPeripheral *)peripheral didDiscoverCharacteristicsForService:(CBService *)service error:(NSError *)error
 {
-    NSLog(@"didDiscoverCharacteristicsForService");
+    NSLog(@"BLE Ops didDiscoverCharacteristicsForService");
     if ([service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]]) {
         [self searchDFURequiredCharacteristics:service];
         if (isDFUControlPointCharacteristic && isDFUPacketCharacteristicFound && isDFUVersionCharacteristicFound) {
@@ -164,7 +170,7 @@ static NSString * const hrsSensorLocationCharacteristicUUIDString = @"00002A38-0
     }
 }
 
-- (void)handleDFUService:(CBService *)service error:(NSError *)error
+- (void)handleDFUService:(CBService *)service
 {
     NSLog(@"bleOperations handleDFUService");
     if ([service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]]) {

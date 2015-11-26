@@ -36,6 +36,9 @@
     NSLog(@"(c)2014-2015 Don Coleman");
 
     [super pluginInitialize];
+    //set up the dfu objects
+    dfuOperations = [[DFUOperations alloc] initWithDelegate:self];
+    self.dfuHelper = [[DFUHelper alloc] initWithData:dfuOperations];
 
     peripherals = [NSMutableSet set];
     manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
@@ -46,6 +49,7 @@
     writeCallbacks = [NSMutableDictionary new];
     notificationCallbacks = [NSMutableDictionary new];
     stopNotificationCallbacks = [NSMutableDictionary new];
+    
 }
 
 #pragma mark - Cordova Plugin Methods
@@ -155,8 +159,9 @@
 //    NSData *message = [command.arguments objectAtIndex:3]; // This is binary
     NSLog(@"UploadFirmwareCalled");
     
-    dfuOperations = [[DFUOperations alloc] initWithDelegate:self];
-    self.dfuHelper = [[DFUHelper alloc] initWithData:dfuOperations];
+    [dfuOperations setCentralManager:manager]; //set the dfu operations as the central manager now
+//    [dfuOperations connectDevice:peripheral];
+    
     uploading = true;
     [self.dfuHelper checkAndPerformDFU];
     
@@ -328,6 +333,17 @@
 
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
 
+    NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
+    if([localName  containsString:@"DfuTarg"] ) {
+        NSLog(@"FOUND DFU Targ!!!");
+    
+//        [manager connectPeripheral:peripheral options:nil];
+        [dfuOperations setCentralManager:central];
+        [dfuOperations setPeripheral:peripheral]; //send this peripheral over to the dfu stuff
+        return; //leave this function
+    }
+
+
     [peripherals addObject:peripheral];
     [peripheral setAdvertisementData:advertisementData RSSI:RSSI];
 
@@ -363,6 +379,9 @@
     [peripheral discoverServices:nil];
 
     // NOTE: not calling connect success until characteristics are discovered
+    
+    
+    [dfuOperations setPeripheral:peripheral];// looping the dfu stuff in so that it can connect to the peripheral as well
 }
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
@@ -377,6 +396,15 @@
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsDictionary:[peripheral asDictionary]];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:connectCallbackId];
     }
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+    if(uploading ) { //if we're currently doing the dfu stuff...
+        //now put the DFU stuff in charge
+        [dfuOperations setCentralManager:manager];
+        [dfuOperations connectDevice:peripheral];
+        
+    }
+    [manager connectPeripheral:peripheral options:options];
+    
 
 }
 
@@ -419,7 +447,7 @@
 
     if( [service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]  ]) {
         NSLog(@"FOUND DFU CHARACTERISTICS");
-        [self.dfuHelper handleDFUService : service:  error];
+        [self.dfuHelper handleDFUService: service];
     }
     
     [latch removeObject:service];
@@ -718,8 +746,14 @@ bool uploading = false;
 {
     NSLog(@"hrmView device disconnected %@",peripheral.name);
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
-
-//    [centralManager connectPeripheral:peripheral options:nil];
+    
+    if(uploading ) { //if we're currently doing the dfu stuff...
+        //now put the DFU stuff in charge
+        [dfuOperations setCentralManager:manager];
+        [dfuOperations connectDevice:peripheral];
+        
+    } else [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+    [manager connectPeripheral:peripheral options:options];
 }
 
 -(void)onReadDFUVersion:(int)version
@@ -782,6 +816,7 @@ bool uploading = false;
     NSLog(@"OnSuccessfulFileTransferred");
     [self onTransferPercentage: 100];
     uploading = false;
+    
 }
 
 -(void)onError:(NSString *)errorMessage

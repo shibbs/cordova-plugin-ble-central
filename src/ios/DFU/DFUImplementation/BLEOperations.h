@@ -58,6 +58,7 @@ andControlPointCharacteristic:(CBCharacteristic *)dfuControlPointCharacteristic;
 
 -(void)setBluetoothCentralManager:(CBCentralManager *)manager;
 -(void)connectDevice:(CBPeripheral *)peripheral;
--(void)handleDFUService:(CBService *)service :(NSError *)error;
+-(void)handleDFUService:(CBService *)service ;
+-(void)setPeripheral:(CBPeripheral *)peripheral;
 
 @end
