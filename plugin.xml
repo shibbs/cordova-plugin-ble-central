@@ -65,7 +65,6 @@
         <header-file src="src/ios/DFU/JSONParser/JSONParser.h" target-dir="BLECentralPlugin/DFU/JSONParser" />
         <source-file src="src/ios/DFU/JSONParser/JSONParser.m" target-dir="BLECentralPlugin/DFU/JSONParser" />
         
-        <asset src="src/ios/DFU/firmwares/Alpine_ble_firmware.hex" target="Alpine_ble_firmware.hex" />
 
         <!-- frameworks -->
         <framework src="CoreBluetooth.framework" />
