@@ -99,9 +99,9 @@ module.exports = {
     },
     
     // params is a fairly complicated array
-    uploadFirmware: function (successCallback, errorCallback, params) {
+    uploadFirmware: function (filePath, successCallback, errorCallback, params) {
         console.log("ble.js uploadFirmwareCall");
-        cordova.exec(successCallback,errorCallback, 'BLE', 'uploadFirmware', [params]);
+        cordova.exec( successCallback,errorCallback, 'BLE', 'uploadFirmware', [filePath, params]);
     },
 
     // value must be an ArrayBuffer
