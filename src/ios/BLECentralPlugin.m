@@ -338,12 +338,15 @@
 
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
     if([localName  containsString:@"DfuTarg"] ) {
-        NSLog(@"FOUND DFU Targ!!!");
+        NSLog(@"FOUND DFU Targ, setting delegate as dfu!!!");
     
 //        [manager connectPeripheral:peripheral options:nil];
         [dfuOperations setCentralManager:central];
         [dfuOperations setPeripheral:peripheral]; //send this peripheral over to the dfu stuff
         return; //leave this function
+    }else if([localName  containsString:@"Radian2"] ) {
+        NSLog(@"FOUND radian, setting delegate as self!!!");
+        self.manager.delegate = self;
     }
 
 
@@ -374,7 +377,7 @@
 
 - (void)centralManager:(CBCentralManager *)central didConnectPeripheral:(CBPeripheral *)peripheral {
 
-    NSLog(@"didConnectPeripheral");
+    NSLog(@"main didConnectPeripheral");
 
     peripheral.delegate = self;
 
@@ -382,14 +385,12 @@
     [peripheral discoverServices:nil];
 
     // NOTE: not calling connect success until characteristics are discovered
-    
-    
     [dfuOperations setPeripheral:peripheral];// looping the dfu stuff in so that it can connect to the peripheral as well
 }
 
 - (void)centralManager:(CBCentralManager *)central didDisconnectPeripheral:(CBPeripheral *)peripheral error:(NSError *)error {
 
-    NSLog(@"didDisconnectPeripheral");
+    NSLog(@"main didDisconnectPeripheral");
 
     NSString *connectCallbackId = [connectCallbacks valueForKey:[peripheral uuidAsString]];
     [connectCallbacks removeObjectForKey:[peripheral uuidAsString]];
@@ -404,6 +405,8 @@
         //now put the DFU stuff in charge
         [dfuOperations setCentralManager:manager];
         [dfuOperations connectDevice:peripheral];
+        
+    }else{
         
     }
     [manager connectPeripheral:peripheral options:options];
@@ -459,6 +462,7 @@
     if ([latch count] == 0) {
         // Call success callback for connect
         if (connectCallbackId) {
+            NSLog(@"Sending connect callback");
             CDVPluginResult *pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary:[peripheral asDictionary]];
             [pluginResult setKeepCallbackAsBool:TRUE];
             [self.commandDelegate sendPluginResult:pluginResult callbackId:connectCallbackId];
@@ -466,7 +470,7 @@
         [connectCallbackLatches removeObjectForKey:peripheralUUIDString];
     }
 
-    NSLog(@"Found characteristics for service %@", service);
+    NSLog(@"main Found characteristics for service %@", service);
     for (CBCharacteristic *characteristic in service.characteristics) {
         NSLog(@"Characteristic %@", characteristic);
     }
@@ -734,6 +738,9 @@ bool uploading = false;
     NSLog(@"main view onDeviceConnected %@",peripheral.name);
     if( uploading ) {   //if we're reconnecting during an interrupted dfu operation, then just send the shit
         [self.dfuHelper checkAndPerformDFU];
+    }else{
+        [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+//        [self.didConnectPeripheral peripheral ];
     }
     
 }
@@ -747,15 +754,20 @@ bool uploading = false;
 
 -(void)onDeviceDisconnected:(CBPeripheral *)peripheral
 {
-    NSLog(@"hrmView device disconnected %@",peripheral.name);
+    NSLog(@"blecentralPlugin.m device disconnected %@",peripheral.name);
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
     
     if(uploading ) { //if we're currently doing the dfu stuff...
         //now put the DFU stuff in charge
+        NSLog(@"STILL UPLOADING");
         [dfuOperations setCentralManager:manager];
         [dfuOperations connectDevice:peripheral];
         
-    } else [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+    } else{
+        NSLog(@"DONE UPLOADING");
+        [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+    }
+    
     [manager connectPeripheral:peripheral options:options];
 }
 
@@ -824,12 +836,15 @@ bool uploading = false;
 {
     NSLog(@"OnSuccessfulFileTransferred");
     [self onTransferPercentage: 100];
+    NSLog(@"Setting manager delegate to self");
+    self.manager.delegate = self; //set up ourself as the central manager again
     uploading = false;
     if (dfuCallbacks) {
         CDVPluginResult *pluginResult = nil;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:101 ];
         [pluginResult setKeepCallbackAsBool:TRUE];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
+        
     }
     
 }
