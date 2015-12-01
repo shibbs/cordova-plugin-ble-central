@@ -48,7 +48,7 @@
 @property BOOL isDfuVersionExist;
 @property BOOL isManifestExist;
 
--(void)checkAndPerformDFU;
+-(void)checkAndPerformDFU: ( NSURL*)  filePath;
 -(void)unzipFiles:(NSURL *)zipFileURL;
 -(void) setFirmwareType:(NSString *)firmwareType;
 -(BOOL)isInitPacketFileExist;

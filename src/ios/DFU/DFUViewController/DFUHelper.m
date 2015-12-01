@@ -36,9 +36,9 @@
     return self;
 }
 
--(void)checkAndPerformDFU
+-(void)checkAndPerformDFU: ( NSURL*) filePath
 {
-    
+    /*
     //selects the desired files
     AccessFileSystem * fileSystem = [[AccessFileSystem alloc]init];
     //the below will select the app zip file
@@ -50,7 +50,9 @@
     NSLog(@" file name is %@",selectedFileName);
     
     NSString *filePath = [appDirectoryPath stringByAppendingPathComponent:selectedFileName];
-    NSURL *url = [NSURL fileURLWithPath:filePath];
+    */
+    
+    NSURL *url = filePath ; // [NSURL fileURLWithPath:filePath];
     self.selectedFileURL = url;
     NSData *fileData = [NSData dataWithContentsOfURL:url];
     self.selectedFileSize = fileData.length;

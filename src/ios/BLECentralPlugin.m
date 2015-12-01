@@ -30,6 +30,8 @@
 @synthesize peripherals;
 @synthesize dfuOperations;
 
+NSURL *filePath = NULL;
+
 - (void)pluginInitialize {
 
     NSLog(@"Cordova BLE Central Plugin");
@@ -157,7 +159,14 @@
 */
 - (void)uploadFirmware:(CDVInvokedUrlCommand*)command {
 //    NSData *message = [command.arguments objectAtIndex:3]; // This is binary
-    NSLog(@"UploadFirmwareCalled");
+    NSString *temp  = [command.arguments objectAtIndex:0]; // get filepath string
+//    NSString *urlString = [NSString stringWithFormat:@"%@", item.image];
+//NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+//
+//NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    filePath = [NSURL URLWithString: temp];
+    
+    NSLog(@"UploadFirmwareCalled, filepath : %@" , filePath);
 
 //    dfuCallbacks =[command.arguments objectAtIndex:0] ;
     dfuCallbacks = [command.callbackId copy];
@@ -166,7 +175,7 @@
 //    [dfuOperations connectDevice:peripheral];
     
     uploading = true;
-    [self.dfuHelper checkAndPerformDFU];
+    [self.dfuHelper checkAndPerformDFU: filePath];
     
 }
 
@@ -737,7 +746,8 @@ bool uploading = false;
 {
     NSLog(@"main view onDeviceConnected %@",peripheral.name);
     if( uploading ) {   //if we're reconnecting during an interrupted dfu operation, then just send the shit
-        [self.dfuHelper checkAndPerformDFU];
+        if( filePath  != NULL)
+            [self.dfuHelper checkAndPerformDFU: filePath];
     }else{
         [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
 //        [self.didConnectPeripheral peripheral ];
