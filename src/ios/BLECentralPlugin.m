@@ -346,7 +346,7 @@ NSURL *filePath = NULL;
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
 
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
-    if([localName  containsString:@"DfuTarg"] ) {
+  /*  if([localName  containsString:@"DfuTarg"] ) {
         NSLog(@"FOUND DFU Targ, setting delegate as dfu!!!");
     
 //        [manager connectPeripheral:peripheral options:nil];
@@ -356,7 +356,7 @@ NSURL *filePath = NULL;
     }else if([localName  containsString:@"Radian2"] ) {
         NSLog(@"FOUND radian, setting delegate as self!!!");
         self.manager.delegate = self;
-    }
+    } */
 
 
     [peripherals addObject:peripheral];
