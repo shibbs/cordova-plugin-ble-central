@@ -103,6 +103,17 @@ NSURL *filePath = NULL;
     NSLog(@"read");
 
     BLECommandContext *context = [self getData:command prop:CBCharacteristicPropertyRead];
+    BLECommandContext *alpine  = [self getData:command prop:CBCharacteristicPropertyNotify];
+    
+    if (alpine) {
+        CBPeripheral *peripheral = [alpine peripheral];
+        CBCharacteristic *characteristic = [alpine characteristic];
+
+        NSString *key = [self keyForPeripheral: peripheral andCharacteristic:characteristic];
+        [readCallbacks setObject:[command.callbackId copy] forKey:key];
+
+        [peripheral readValueForCharacteristic:characteristic];  // callback sends value
+    }
     if (context) {
 
         CBPeripheral *peripheral = [context peripheral];
