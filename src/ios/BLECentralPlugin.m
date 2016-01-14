@@ -18,8 +18,6 @@
 
 #import "BLECentralPlugin.h"
 #import <Cordova/CDV.h>
-//dummy to force commit
-
 
 @interface BLECentralPlugin()
 - (CBPeripheral *)findPeripheralByUUID:(NSString *)uuid;

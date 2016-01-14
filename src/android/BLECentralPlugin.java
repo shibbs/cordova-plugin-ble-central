@@ -22,7 +22,6 @@ import android.bluetooth.BluetoothManager;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
-import android.os.Build;
 
 import android.provider.Settings;
 import org.apache.cordova.CallbackContext;
@@ -286,51 +285,9 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
         discoverCallback = callbackContext;
 
         if (serviceUUIDs.length > 0) {
-              bluetoothAdapter.startLeScan(serviceUUIDs, this);
+            bluetoothAdapter.startLeScan(serviceUUIDs, this);
         } else {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
-              LOG.d("FLED", "Scanning with new API");
-              ArrayList filters = new ArrayList();
-              ScanFilter filter = new ScanFilter.Builder().setDeviceName("Radian2").build();
-              filters.add(filter);
-
-              ScanSettings settings = new ScanSettings.Builder().setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY).build();
-
-              final ScanCallback callback = new ScanCallback() {
-                   @Override
-                   public void onScanResult(int callbackType, ScanResult result) {
-                     LOG.d("onScanResult", "In scanCallback");
-
-                     BluetoothDevice device = result.getDevice();
-                     String address = device.getAddress();
-
-                     if (!peripherals.containsKey(address)) {
-
-                        LOG.d("onScanResult", "Adding peripheral & returning result to JS land");
-                         Peripheral peripheral = new Peripheral(device, result.getRssi(), result.getScanRecord().getBytes());
-                         peripherals.put(address, peripheral);
-
-                         if (discoverCallback != null) {
-                             PluginResult result = new PluginResult(PluginResult.Status.OK, peripheral.asJSONObject());
-                             result.setKeepCallback(true);
-                             discoverCallback.sendPluginResult(result);
-                         }
-                     }
-                   }
-                   @Override
-                   public void onScanFailed(int errorCode) {
-                       super.onScanFailed(errorCode);
-                       Log.v("ScanTask", "Some error occurred");
-                  }
-              };
-
-              BluetoothLeScanner scanner = bluetoothAdapter.getBluetoothLeScanner();
-
-              scanner.startScan(filters, settings, callback);
-            }else{
-              bluetoothAdapter.startLeScan(this);
-            }
-
+            bluetoothAdapter.startLeScan(this);
         }
 
         if (scanSeconds > 0) {
