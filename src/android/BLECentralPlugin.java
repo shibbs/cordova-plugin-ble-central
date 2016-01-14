@@ -289,7 +289,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
         if (serviceUUIDs.length > 0) {
               bluetoothAdapter.startLeScan(serviceUUIDs, this);
         } else {
-            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP;){
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
               LOG.d("FLED", "It's working!");
               filters = new ArrayList<>();
               ScanFilter filter = new ScanFilter.Builder().setDeviceName("Radian2").build();
@@ -301,9 +301,9 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
                    @Override
                    public void onScanResult(int callbackType, ScanResult result) {
                      LOG.d("onScanResult", "In scanCallback");
+
                      BluetoothDevice device = result.getDevice();
                      String address = device.getAddress();
-
 
                      if (!peripherals.containsKey(address)) {
 
@@ -316,7 +316,6 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
                              result.setKeepCallback(true);
                              discoverCallback.sendPluginResult(result);
                          }
-
                      }
                    }
                    @Override
