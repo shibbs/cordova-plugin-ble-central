@@ -15,10 +15,12 @@
 package com.megster.cordova.ble.central;
 
 import android.app.Activity;
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.bluetooth.BluetoothGattCharacteristic;
-import android.bluetooth.BluetoothManager;
+import android.bluetooth.*;
+import android.bluetooth.le.ScanFilter;
+import android.bluetooth.le.ScanSettings;
+import android.bluetooth.le.ScanCallback;
+import android.bluetooth.le.BluetoothLeScanner;
+import android.bluetooth.le.ScanResult;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
@@ -311,16 +313,16 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
                          peripherals.put(address, peripheral);
 
                          if (discoverCallback != null) {
-                             PluginResult result = new PluginResult(PluginResult.Status.OK, peripheral.asJSONObject());
-                             result.setKeepCallback(true);
-                             discoverCallback.sendPluginResult(result);
+                             PluginResult presult = new PluginResult(PluginResult.Status.OK, peripheral.asJSONObject());
+                             presult.setKeepCallback(true);
+                             discoverCallback.sendPluginResult(presult);
                          }
                      }
                    }
                    @Override
                    public void onScanFailed(int errorCode) {
                        super.onScanFailed(errorCode);
-                       Log.v("ScanTask", "Some error occurred");
+                       LOG.v("ScanTask", "Some error occurred");
                   }
               };
 
