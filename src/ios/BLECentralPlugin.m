@@ -52,7 +52,7 @@ NSURL *filePath = NULL;
     dfuCallbacks = [NSMutableDictionary new];
     notificationCallbacks = [NSMutableDictionary new];
     stopNotificationCallbacks = [NSMutableDictionary new];
-    
+
 }
 
 #pragma mark - Cordova Plugin Methods
@@ -100,12 +100,13 @@ NSURL *filePath = NULL;
 
 // read: function (device_id, service_uuid, characteristic_uuid, success, failure) {
 - (void)read:(CDVInvokedUrlCommand*)command {
-    NSLog(@"read");
+    NSLog(@"read. command: %@", command);
 
     BLECommandContext *context = [self getData:command prop:CBCharacteristicPropertyRead];
     BLECommandContext *alpine  = [self getData:command prop:CBCharacteristicPropertyNotify];
-    
+
     if (alpine) {
+      NSLog(@"Doing an Alpine read.");
         CBPeripheral *peripheral = [alpine peripheral];
         CBCharacteristic *characteristic = [alpine characteristic];
 
@@ -114,8 +115,8 @@ NSURL *filePath = NULL;
 
         [peripheral readValueForCharacteristic:characteristic];  // callback sends value
     }
-    if (context) {
-
+    else if (context) {
+        NSLog(@"Doing a normal read.");
         CBPeripheral *peripheral = [context peripheral];
         CBCharacteristic *characteristic = [context characteristic];
 
@@ -176,18 +177,18 @@ NSURL *filePath = NULL;
 //
 //NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
     filePath = [NSURL URLWithString: temp];
-    
+
     NSLog(@"UploadFirmwareCalled, filepath : %@" , filePath);
 
 //    dfuCallbacks =[command.arguments objectAtIndex:0] ;
     dfuCallbacks = [command.callbackId copy];
-    
+
     [dfuOperations setCentralManager:manager]; //set the dfu operations as the central manager now
 //    [dfuOperations connectDevice:peripheral];
-    
+
     uploading = true;
     [self.dfuHelper checkAndPerformDFU: filePath];
-    
+
 }
 
 // writeWithoutResponse: function (device_id, service_uuid, characteristic_uuid, value, success, failure) {
@@ -359,7 +360,7 @@ NSURL *filePath = NULL;
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
   /*  if([localName  containsString:@"DfuTarg"] ) {
         NSLog(@"FOUND DFU Targ, setting delegate as dfu!!!");
-    
+
 //        [manager connectPeripheral:peripheral options:nil];
         [dfuOperations setCentralManager:central];
         [dfuOperations setPeripheral:peripheral]; //send this peripheral over to the dfu stuff
@@ -425,12 +426,12 @@ NSURL *filePath = NULL;
         //now put the DFU stuff in charge
         [dfuOperations setCentralManager:manager];
         [dfuOperations connectDevice:peripheral];
-        
+
     }else{
-        
+
     }
     [manager connectPeripheral:peripheral options:options];
-    
+
 
 }
 
@@ -475,10 +476,10 @@ NSURL *filePath = NULL;
         NSLog(@"FOUND DFU CHARACTERISTICS");
         [self.dfuHelper handleDFUService: service];
     }
-    
+
     [latch removeObject:service];
 
-    
+
     if ([latch count] == 0) {
         // Call success callback for connect
         if (connectCallbackId) {
@@ -591,9 +592,11 @@ NSURL *filePath = NULL;
 
         NSString* other = p.identifier.UUIDString;
 
-        if ([uuid isEqualToString:other]) {
-            peripheral = p;
-            break;
+        if(other != nil && uuid != nil){
+          if ([uuid isEqualToString:other]) {
+              peripheral = p;
+              break;
+          }
         }
     }
     return peripheral;
@@ -619,6 +622,7 @@ NSURL *filePath = NULL;
     for(int i=0; i < service.characteristics.count; i++)
     {
         CBCharacteristic *c = [service.characteristics objectAtIndex:i];
+        NSLog(@"Inspecting characteristic: %@", c);
         if ((c.properties & prop) != 0x0 && [self compareCBUUID:c.UUID UUID2:UUID]) {
             return c;
         }
@@ -650,9 +654,12 @@ NSURL *filePath = NULL;
     NSString *serviceUUIDString = [command.arguments objectAtIndex:1];
     NSString *characteristicUUIDString = [command.arguments objectAtIndex:2];
 
+    NSLog(@"Getting service UUID...");
     CBUUID *serviceUUID = [CBUUID UUIDWithString:serviceUUIDString];
+    NSLog(@"Getting characteristic UUID...");
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:characteristicUUIDString];
 
+    NSLog(@"Finding peripheral...");
     CBPeripheral *peripheral = [self findPeripheralByUUID:deviceUUIDString];
 
     if (!peripheral) {
@@ -664,8 +671,11 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
+    }else{
+      NSLog(@"Succesfully found peripheral.");
     }
 
+    NSLog(@"Finding service...");
     CBService *service = [self findServiceFromUUID:serviceUUID p:peripheral];
 
     if (!service)
@@ -682,8 +692,11 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
+    }else{
+      NSLog(@"Succesfully found service.");
     }
 
+    NSLog(@"Finding CBCharacteristic...");
     CBCharacteristic *characteristic = [self findCharacteristicFromUUID:characteristicUUID service:service prop:prop];
 
     // Special handling for INDICATE. If charateristic with notify is not found, check for indicate.
@@ -708,6 +721,8 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
+    }else{
+      NSLog(@"Succesfully found characteristic.");
     }
 
     BLECommandContext *context = [[BLECommandContext alloc] init];
@@ -763,32 +778,32 @@ bool uploading = false;
         [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
 //        [self.didConnectPeripheral peripheral ];
     }
-    
+
 }
 
 -(void)onDeviceConnectedWithVersion:(CBPeripheral *)peripheral
 {
     NSLog(@"onDeviceConnectedWithVersion %@",peripheral.name);
 
-    
+
 }
 
 -(void)onDeviceDisconnected:(CBPeripheral *)peripheral
 {
     NSLog(@"blecentralPlugin.m device disconnected %@",peripheral.name);
     NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
-    
+
     if(uploading ) { //if we're currently doing the dfu stuff...
         //now put the DFU stuff in charge
         NSLog(@"STILL UPLOADING");
         [dfuOperations setCentralManager:manager];
         [dfuOperations connectDevice:peripheral];
-        
+
     } else{
         NSLog(@"DONE UPLOADING");
         [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
     }
-    
+
     [manager connectPeripheral:peripheral options:options];
 }
 
@@ -832,7 +847,7 @@ bool uploading = false;
 -(void)onBootloaderUploadStarted
 {
     NSLog(@"onBootloaderUploadStarted");
-    
+
 }
 
 -(void)onBootloaderUploadCompleted
@@ -865,9 +880,9 @@ bool uploading = false;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:101 ];
         [pluginResult setKeepCallbackAsBool:TRUE];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
-        
+
     }
-    
+
 }
 
 -(void)onError:(NSString *)errorMessage
