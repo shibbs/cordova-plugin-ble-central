@@ -646,7 +646,6 @@ NSURL *filePath = NULL;
 
 // expecting deviceUUID, serviceUUID, characteristicUUID in command.arguments
 -(BLECommandContext*) getData:(CDVInvokedUrlCommand*)command prop:(CBCharacteristicProperties)prop {
-    NSLog(@"getData");
 
     CDVPluginResult *pluginResult = nil;
 
@@ -654,12 +653,8 @@ NSURL *filePath = NULL;
     NSString *serviceUUIDString = [command.arguments objectAtIndex:1];
     NSString *characteristicUUIDString = [command.arguments objectAtIndex:2];
 
-    NSLog(@"Getting service UUID...");
     CBUUID *serviceUUID = [CBUUID UUIDWithString:serviceUUIDString];
-    NSLog(@"Getting characteristic UUID...");
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:characteristicUUIDString];
-
-    NSLog(@"Finding peripheral...");
     CBPeripheral *peripheral = [self findPeripheralByUUID:deviceUUIDString];
 
     if (!peripheral) {
@@ -671,11 +666,8 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found peripheral.");
     }
 
-    NSLog(@"Finding service...");
     CBService *service = [self findServiceFromUUID:serviceUUID p:peripheral];
 
     if (!service)
@@ -696,7 +688,6 @@ NSURL *filePath = NULL;
       NSLog(@"Succesfully found service.");
     }
 
-    NSLog(@"Finding CBCharacteristic...");
     CBCharacteristic *characteristic = [self findCharacteristicFromUUID:characteristicUUID service:service prop:prop];
 
     // Special handling for INDICATE. If charateristic with notify is not found, check for indicate.
@@ -721,8 +712,6 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found characteristic.");
     }
 
     BLECommandContext *context = [[BLECommandContext alloc] init];
