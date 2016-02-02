@@ -618,11 +618,9 @@ NSURL *filePath = NULL;
 // RedBearLab
 -(CBCharacteristic *) findCharacteristicFromUUID:(CBUUID *)UUID service:(CBService*)service prop:(CBCharacteristicProperties)prop
 {
-    NSLog(@"Looking for %@", UUID);
     for(int i=0; i < service.characteristics.count; i++)
     {
         CBCharacteristic *c = [service.characteristics objectAtIndex:i];
-        NSLog(@"Inspecting characteristic: %@", c);
         if ((c.properties & prop) != 0x0 && [self compareCBUUID:c.UUID UUID2:UUID]) {
             return c;
         }
@@ -684,8 +682,6 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found service.");
     }
 
     CBCharacteristic *characteristic = [self findCharacteristicFromUUID:characteristicUUID service:service prop:prop];
