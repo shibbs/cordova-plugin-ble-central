@@ -22,6 +22,7 @@
 @interface BLECentralPlugin()
 - (CBPeripheral *)findPeripheralByUUID:(NSString *)uuid;
 - (void)stopScanTimer:(NSTimer *)timer;
+- (void)sendAfterConnectTimer:(NSTimer *)timer;
 @end
 
 @implementation BLECentralPlugin
@@ -618,11 +619,9 @@ NSURL *filePath = NULL;
 // RedBearLab
 -(CBCharacteristic *) findCharacteristicFromUUID:(CBUUID *)UUID service:(CBService*)service prop:(CBCharacteristicProperties)prop
 {
-    NSLog(@"Looking for %@", UUID);
     for(int i=0; i < service.characteristics.count; i++)
     {
         CBCharacteristic *c = [service.characteristics objectAtIndex:i];
-        NSLog(@"Inspecting characteristic: %@", c);
         if ((c.properties & prop) != 0x0 && [self compareCBUUID:c.UUID UUID2:UUID]) {
             return c;
         }
@@ -646,7 +645,6 @@ NSURL *filePath = NULL;
 
 // expecting deviceUUID, serviceUUID, characteristicUUID in command.arguments
 -(BLECommandContext*) getData:(CDVInvokedUrlCommand*)command prop:(CBCharacteristicProperties)prop {
-    NSLog(@"getData");
 
     CDVPluginResult *pluginResult = nil;
 
@@ -654,12 +652,8 @@ NSURL *filePath = NULL;
     NSString *serviceUUIDString = [command.arguments objectAtIndex:1];
     NSString *characteristicUUIDString = [command.arguments objectAtIndex:2];
 
-    NSLog(@"Getting service UUID...");
     CBUUID *serviceUUID = [CBUUID UUIDWithString:serviceUUIDString];
-    NSLog(@"Getting characteristic UUID...");
     CBUUID *characteristicUUID = [CBUUID UUIDWithString:characteristicUUIDString];
-
-    NSLog(@"Finding peripheral...");
     CBPeripheral *peripheral = [self findPeripheralByUUID:deviceUUIDString];
 
     if (!peripheral) {
@@ -671,11 +665,8 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found peripheral.");
     }
 
-    NSLog(@"Finding service...");
     CBService *service = [self findServiceFromUUID:serviceUUID p:peripheral];
 
     if (!service)
@@ -692,11 +683,8 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found service.");
     }
 
-    NSLog(@"Finding CBCharacteristic...");
     CBCharacteristic *characteristic = [self findCharacteristicFromUUID:characteristicUUID service:service prop:prop];
 
     // Special handling for INDICATE. If charateristic with notify is not found, check for indicate.
@@ -721,8 +709,6 @@ NSURL *filePath = NULL;
         [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
         return nil;
-    }else{
-      NSLog(@"Succesfully found characteristic.");
     }
 
     BLECommandContext *context = [[BLECommandContext alloc] init];
@@ -763,17 +749,27 @@ NSURL *filePath = NULL;
 }
 
 
-
+-(void)startDFU:(NSTimer*)theTimer
+{
+    [self.dfuHelper checkAndPerformDFU: filePath];
+}
 #pragma mark DFUOperations delegate methods
 
 bool uploading = false;
+
+
 
 -(void)onDeviceConnected:(CBPeripheral *)peripheral
 {
     NSLog(@"main view onDeviceConnected %@",peripheral.name);
     if( uploading ) {   //if we're reconnecting during an interrupted dfu operation, then just send the shit
         if( filePath  != NULL)
-            [self.dfuHelper checkAndPerformDFU: filePath];
+            [NSTimer scheduledTimerWithTimeInterval:2
+                                 target:self
+                               selector:@selector(startDFU:)
+                               userInfo:NULL
+                                repeats:NO];
+        
     }else{
         [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
 //        [self.didConnectPeripheral peripheral ];
