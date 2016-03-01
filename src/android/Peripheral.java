@@ -280,6 +280,11 @@ public class Peripheral extends BluetoothGattCallback {
         BluetoothGattService service = gatt.getService(serviceUUID);
         //BluetoothGattCharacteristic characteristic = service.getCharacteristic(characteristicUUID);
         BluetoothGattCharacteristic characteristic = findNotifyCharacteristic(service, characteristicUUID);
+        if(characteristic == null){
+          callbackContext.error("Characteristic is null");
+          return;
+        }
+        
         String key = generateHashKey(serviceUUID, characteristic);
 
         if (characteristic != null) {
