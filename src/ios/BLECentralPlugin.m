@@ -359,18 +359,6 @@ NSURL *filePath = NULL;
 - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI {
 
     NSString *localName = [advertisementData objectForKey:CBAdvertisementDataLocalNameKey];
-  /*  if([localName  containsString:@"DfuTarg"] ) {
-        NSLog(@"FOUND DFU Targ, setting delegate as dfu!!!");
-
-//        [manager connectPeripheral:peripheral options:nil];
-        [dfuOperations setCentralManager:central];
-        [dfuOperations setPeripheral:peripheral]; //send this peripheral over to the dfu stuff
-        return; //leave this function
-    }else if([localName  containsString:@"Radian2"] ) {
-        NSLog(@"FOUND radian, setting delegate as self!!!");
-        self.manager.delegate = self;
-    } */
-
 
     [peripherals addObject:peripheral];
     [peripheral setAdvertisementData:advertisementData RSSI:RSSI];
@@ -769,7 +757,7 @@ bool uploading = false;
                                selector:@selector(startDFU:)
                                userInfo:NULL
                                 repeats:NO];
-        
+
     }else{
         [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
 //        [self.didConnectPeripheral peripheral ];
