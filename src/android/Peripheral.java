@@ -50,6 +50,7 @@ public class Peripheral extends BluetoothGattCallback {
     private CallbackContext connectCallback;
     private CallbackContext readCallback;
     private CallbackContext writeCallback;
+    private CallbackContext mtuCallback;
 
     private Map<String, CallbackContext> notificationCallbacks = new HashMap<String, CallbackContext>();
 
@@ -78,6 +79,11 @@ public class Peripheral extends BluetoothGattCallback {
             gatt.close();
             gatt = null;
         }
+    }
+
+    public void bumpMTU(CallbackContext callbackContext){
+      mtuCallback = callbackContext;
+      gatt.requestMtu(70);
     }
 
     public JSONObject asJSONObject()  {
@@ -166,6 +172,16 @@ public class Peripheral extends BluetoothGattCallback {
 
     public BluetoothDevice getDevice() {
         return device;
+    }
+
+    @Override
+    public void onMtuChanged(BluetoothGatt gatt, int mtu, int status){
+      if(status == GATT_SUCCESS){
+        PluginResult result = new PluginResult(PluginResult.Status.OK, mtu);
+        mtuCallback.sendPluginResult(result); // TODO: callbackContext needs to be real
+      }{
+        mtuCallback.error("Not able to negotiate a higher MTU"); // TODO: callbackContext needs to be real
+      }
     }
 
     @Override
@@ -284,7 +300,7 @@ public class Peripheral extends BluetoothGattCallback {
           callbackContext.error("Characteristic is null");
           return;
         }
-        
+
         String key = generateHashKey(serviceUUID, characteristic);
 
         if (characteristic != null) {

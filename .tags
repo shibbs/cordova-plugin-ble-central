@@ -4,711 +4,13 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 Battery	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/README.md	/^## Battery$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^button {$/;"	function	line:18
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^#mainPage {$/;"	function	line:24
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^#detailPage {$/;"	function	line:28
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^#detailPage div {$/;"	function	line:33
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^#detailPage button {$/;"	function	line:37
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^ul {$/;"	function	line:42
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^li {$/;"	function	line:48
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/css/index.css	/^button {$/;"	function	line:57
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <title>SensorTag<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <div class="app">$/;"	function	line:12
-p	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^            <p style="text-align:center; padding-top: 20px;">Choose a peripheral with a battery service<\/p>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^                <ul id="deviceList">$/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^                <div id="batteryState"><\/div>$/;"	function	line:20
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^                <button id="batteryStateButton">Read Battery State<\/button>$/;"	function	line:21
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:22
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:25
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:26
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:27
-battery.service	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^var battery = {$/;"	property	line:21
-battery.level	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    service: "180F",$/;"	property	line:22
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    initialize: function() {$/;"	function	line:27
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^var app = {$/;"	method	line:26
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:31
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:30
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:38
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:37
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:41
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:40
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:46
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:45
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    connect: function(e) {$/;"	function	line:59
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:58
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^            onConnect = function() {$/;"	function	line:61
-onBatteryLevelChange	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    onBatteryLevelChange: function(data) {$/;"	function	line:73
-app.onBatteryLevelChange	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:72
-readBatteryState	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    readBatteryState: function(event) {$/;"	function	line:79
-app.readBatteryState	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:78
-onReadBatteryLevel	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    onReadBatteryLevel: function(data) {$/;"	function	line:84
-app.onReadBatteryLevel	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:83
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:90
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:89
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:94
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:93
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:98
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:97
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:102
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/battery/www/js/index.js	/^    },$/;"	method	line:101
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 Adafruit UART	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/README.md	/^## Adafruit UART$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^button {$/;"	function	line:18
-input[type=range]	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^input[type=range] {$/;"	function	line:25
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^#mainPage {$/;"	function	line:29
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^#detailPage {$/;"	function	line:33
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^#detailPage div {$/;"	function	line:38
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^#detailPage button {$/;"	function	line:42
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^ul {$/;"	function	line:47
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^li {$/;"	function	line:53
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^button {$/;"	function	line:62
-#resultDiv	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/css/index.css	/^#resultDiv {$/;"	function	line:68
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <title>BluefruitLE<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^            <h1>BluefruitLE<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                <ul id="deviceList">                    $/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                <div id="resultDiv"><\/div>$/;"	function	line:20
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                <div>$/;"	function	line:21
-input	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                    <input type="text" id="messageInput" value="Hello"\/>$/;"	function	line:22
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                    <button id="sendButton">Send<\/button>                    $/;"	function	line:23
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:25
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:28
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:29
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:30
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^function bytesToString(buffer) {$/;"	function	line:22
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^function bytesToString(buffer) {$/;"	function	line:22
-stringToBytes	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^function stringToBytes(string) {$/;"	function	line:27
-stringToBytes	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^function stringToBytes(string) {$/;"	function	line:27
-bluefruit.serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^var bluefruit = {$/;"	property	line:36
-bluefruit.txCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    serviceUUID: '6e400001-b5a3-f393-e0a9-e50e24dcca9e',$/;"	property	line:37
-bluefruit.rxCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    txCharacteristic: '6e400002-b5a3-f393-e0a9-e50e24dcca9e', \/\/ transmit is from the phone's perspective$/;"	property	line:38
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    initialize: function() {$/;"	function	line:43
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^var app = {$/;"	method	line:42
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:47
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:46
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:54
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:53
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:57
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:56
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:65
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:64
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    connect: function(e) {$/;"	function	line:75
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:74
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^            onConnect = function(peripheral) {$/;"	function	line:77
-determineWriteType	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    determineWriteType: function(peripheral) {$/;"	function	line:90
-app.determineWriteType	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:89
-onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    onData: function(data) { \/\/ data received from Arduino$/;"	function	line:107
-app.onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:106
-sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    sendData: function(event) { \/\/ send data to Arduino$/;"	function	line:112
-app.sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:111
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^        var success = function() {$/;"	function	line:114
-app.sendData.success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^        var success = function() {$/;"	function	line:114
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^        var failure = function() {$/;"	function	line:120
-app.sendData.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^        var failure = function() {$/;"	function	line:120
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:144
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:143
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:148
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:147
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:152
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:151
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:156
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/bluefruitle/www/js/index.js	/^    },$/;"	method	line:155
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Supported hook types	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^## Supported hook types$/;"	function	line:32
-Ways to define hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^## Ways to define hooks$/;"	function	line:68
-Via '/hooks' directory	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^### Via '\/hooks' directory$/;"	function	line:69
-Config.xml	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^### Config.xml$/;"	function	line:76
-Plugin hooks (plugin.xml)	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^### Plugin hooks (plugin.xml)$/;"	function	line:98
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^## Script Interface$/;"	function	line:113
-Javascript	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^### Javascript$/;"	function	line:115
-Non-javascript	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^### Non-javascript$/;"	function	line:175
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/hooks/README.md	/^## Writing hooks$/;"	function	line:187
-*	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/css/index.css	/^* {$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/css/index.css	/^body {$/;"	function	line:5
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/css/index.css	/^div {$/;"	function	line:17
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/css/index.css	/^h1 {$/;"	function	line:21
-h2	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/css/index.css	/^h2 {$/;"	function	line:25
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <meta name="msapplication-tap-highlight" content="no" \/>$/;"	function	line:6
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" \/>$/;"	function	line:7
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <title>Heart Rate<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <div>$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^            <h2>BLE Heart Rate Demo<\/h2>$/;"	function	line:13
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^            <h1 id="beatsPerMinute">...<\/h1>$/;"	function	line:14
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^            <div id="statusDiv"><\/div>$/;"	function	line:15
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:17
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:18
-heartRate.service	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^var heartRate = {$/;"	property	line:19
-heartRate.measurement	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    service: '180d',$/;"	property	line:20
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    initialize: function() {$/;"	function	line:25
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^var app = {$/;"	method	line:24
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:28
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:27
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:31
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:30
-scan	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    scan: function() {$/;"	function	line:34
-app.scan	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:33
-onScan	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^        function onScan(peripheral) {$/;"	function	line:39
-app.scan.onScan	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^        function onScan(peripheral) {$/;"	function	line:39
-scanFailure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^        function scanFailure(reason) {$/;"	function	line:47
-app.scan.scanFailure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^        function scanFailure(reason) {$/;"	function	line:47
-setTimeout	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^        setTimeout(function() {$/;"	function	line:53
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    onConnect: function(peripheral) {$/;"	function	line:59
-app.onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:58
-onDisconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    onDisconnect: function(reason) {$/;"	function	line:63
-app.onDisconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:62
-onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    onData: function(buffer) {$/;"	function	line:68
-app.onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:67
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:74
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:73
-status	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    status: function(message) {$/;"	function	line:77
-app.status	/Users/macmin/Documents/cordova-plugin-ble-central/examples/heartrate/www/js/index.js	/^    },$/;"	method	line:76
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 MetaWare	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/README.md	/^## MetaWare$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^button {$/;"	function	line:18
-input[type=range]	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^input[type=range] {$/;"	function	line:25
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#mainPage {$/;"	function	line:29
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#detailPage {$/;"	function	line:33
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#detailPage div {$/;"	function	line:38
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#detailPage button {$/;"	function	line:42
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^ul {$/;"	function	line:47
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^li {$/;"	function	line:53
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^button {$/;"	function	line:62
-#resultDiv	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#resultDiv {$/;"	function	line:68
-.haptic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^.haptic {$/;"	function	line:79
-.buttonDiv	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^.buttonDiv {$/;"	function	line:83
-#detailPage .haptic button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^#detailPage .haptic button {$/;"	function	line:89
-input[type="number"]	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/css/index.css	/^input[type="number"] {$/;"	function	line:93
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <title>MetaWear<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^            <h1>MetaWear<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                <ul id="deviceList">                    $/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                <div id="resultDiv"><\/div>$/;"	function	line:20
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                <div class="haptic">$/;"	function	line:21
-label	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                    <label>Pulse Width&nbsp;<input type="number" id="pulseWidthInput" value="500"\/><\/label>&nbsp;ms$/;"	function	line:22
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                    <div class="buttonDiv">$/;"	function	line:23
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                        <button id="motorButton">Motor<\/button>$/;"	function	line:24
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                        <button id="buzzerButton">Buzzer<\/button>                    $/;"	function	line:25
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:28
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:31
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:32
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:33
-metawear.serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^var metawear = {$/;"	property	line:22
-metawear.txCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    serviceUUID: "326a9000-85cb-9195-d9dd-464cfbbae75a",$/;"	property	line:23
-metawear.rxCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    txCharacteristic: "326a9001-85cb-9195-d9dd-464cfbbae75a", \/\/ transmit is from the phone's perspective$/;"	property	line:24
-app.deviceId	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^var app = {$/;"	property	line:28
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    initialize: function() {$/;"	function	line:30
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    deviceId: "",$/;"	method	line:29
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:34
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:33
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:42
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:41
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:45
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:44
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:53
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:52
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    connect: function(e) {$/;"	function	line:63
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:62
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^        var onConnect = function() {$/;"	function	line:66
-app.connect.onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^        var onConnect = function() {$/;"	function	line:66
-onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onData: function(buffer) { \/\/ data received from MetaWear$/;"	function	line:73
-app.onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:72
-writeData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    writeData: function(buffer, success, failure) { \/\/ to to be sent to MetaWear$/;"	function	line:89
-app.writeData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:88
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^            success = function() {$/;"	function	line:92
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^        if (!success) {$/;"	function	line:91
-subscribeForIncomingData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    subscribeForIncomingData: function() {$/;"	function	line:105
-app.subscribeForIncomingData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:104
-enableButtonFeedback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    enableButtonFeedback: function(success, failure) {$/;"	function	line:108
-app.enableButtonFeedback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:107
-onMotorButton	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onMotorButton: function(event) {$/;"	function	line:116
-app.onMotorButton	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:115
-onBuzzerButton	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onBuzzerButton: function(event) {$/;"	function	line:128
-app.onBuzzerButton	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:127
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:140
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:139
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:144
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:143
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:148
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:147
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:153
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/metawear/www/js/index.js	/^    },$/;"	method	line:152
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 RedBearLab UART	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/README.md	/^## RedBearLab UART$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^button {$/;"	function	line:18
-input[type=range]	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^input[type=range] {$/;"	function	line:25
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^#mainPage {$/;"	function	line:29
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^#detailPage {$/;"	function	line:33
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^#detailPage div {$/;"	function	line:38
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^#detailPage button {$/;"	function	line:42
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^ul {$/;"	function	line:47
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^li {$/;"	function	line:53
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^button {$/;"	function	line:62
-#resultDiv	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/css/index.css	/^#resultDiv {$/;"	function	line:68
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <title>RedBearLab Chat<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^            <h1>RedBearLab<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                <ul id="deviceList">$/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                <div id="resultDiv"><\/div>$/;"	function	line:20
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                <div>$/;"	function	line:21
-input	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                    <input type="text" id="messageInput" value="Hello"\/>$/;"	function	line:22
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                    <button id="sendButton">Send<\/button>$/;"	function	line:23
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:25
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:28
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:29
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:30
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^function bytesToString(buffer) {$/;"	function	line:22
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^function bytesToString(buffer) {$/;"	function	line:22
-stringToBytes	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^function stringToBytes(string) {$/;"	function	line:27
-stringToBytes	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^function stringToBytes(string) {$/;"	function	line:27
-redbear.serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^var redbear = {$/;"	property	line:36
-redbear.txCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    serviceUUID: "713D0000-503E-4C75-BA94-3148F18D941E",$/;"	property	line:37
-redbear.rxCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    txCharacteristic: "713D0003-503E-4C75-BA94-3148F18D941E", \/\/ transmit is from the phone's perspective$/;"	property	line:38
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    initialize: function() {$/;"	function	line:43
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^var app = {$/;"	method	line:42
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:47
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:46
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:54
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:53
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:57
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:56
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:65
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:64
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    connect: function(e) {$/;"	function	line:75
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:74
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^            onConnect = function() {$/;"	function	line:77
-onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    onData: function(data) { \/\/ data received from Arduino$/;"	function	line:87
-app.onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:86
-sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    sendData: function(event) { \/\/ send data to Arduino$/;"	function	line:92
-app.sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:91
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^        var success = function() {$/;"	function	line:94
-app.sendData.success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^        var success = function() {$/;"	function	line:94
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^        var failure = function() {$/;"	function	line:100
-app.sendData.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^        var failure = function() {$/;"	function	line:100
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:109
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:108
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:113
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:112
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:117
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:116
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:121
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/redbearlab/www/js/index.js	/^    },$/;"	method	line:120
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 RFduino LED Button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/README.md	/^## RFduino LED Button$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^button {$/;"	function	line:18
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^#mainPage {$/;"	function	line:24
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^#detailPage {$/;"	function	line:28
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^#detailPage div {$/;"	function	line:33
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^#detailPage button {$/;"	function	line:37
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^ul {$/;"	function	line:42
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^li {$/;"	function	line:48
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/css/index.css	/^button {$/;"	function	line:57
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <title>RFduino LED Button<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^            <h1>RFduino LED Button<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^                <ul id="deviceList">                    $/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^                <div id="buttonState">Button Released<\/div>$/;"	function	line:20
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^                <div id="ledButton">Hold for LED<\/div>$/;"	function	line:21
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:22
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:25
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:26
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:27
-arrayBufferToInt	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var arrayBufferToInt = function (ab) {$/;"	function	line:21
-arrayBufferToInt	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var arrayBufferToInt = function (ab) {$/;"	function	line:21
-rfduino.serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var rfduino = {$/;"	property	line:26
-rfduino.receiveCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    serviceUUID: "2220",$/;"	property	line:27
-rfduino.sendCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    receiveCharacteristic: "2221",$/;"	property	line:28
-rfduino.disconnectCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    sendCharacteristic: "2222",$/;"	property	line:29
-parseAdvertisingData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^function parseAdvertisingData(bytes) {$/;"	function	line:36
-parseAdvertisingData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^function parseAdvertisingData(bytes) {$/;"	function	line:36
-getRFduinoService	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var getRFduinoService = function(scanRecord) {$/;"	function	line:60
-getRFduinoService	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var getRFduinoService = function(scanRecord) {$/;"	function	line:60
-arrayBufferToIntArray	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var arrayBufferToIntArray = function(buffer) {$/;"	function	line:80
-arrayBufferToIntArray	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var arrayBufferToIntArray = function(buffer) {$/;"	function	line:80
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var bytesToString = function (bytes) {$/;"	function	line:94
-bytesToString	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var bytesToString = function (bytes) {$/;"	function	line:94
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    initialize: function() {$/;"	function	line:103
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^var app = {$/;"	method	line:102
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:107
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:106
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:115
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:114
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:118
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:117
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:122
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:121
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    connect: function(e) {$/;"	function	line:133
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:132
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^            onConnect = function() {$/;"	function	line:135
-onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    onData: function(data) { \/\/ data received from rfduino$/;"	function	line:145
-app.onData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:144
-sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    sendData: function(event) { \/\/ send data to rfduino$/;"	function	line:154
-app.sendData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:153
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^        var success = function() {$/;"	function	line:156
-app.sendData.success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^        var success = function() {$/;"	function	line:156
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^        var failure = function() {$/;"	function	line:160
-app.sendData.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^        var failure = function() {$/;"	function	line:160
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:171
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:170
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:175
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:174
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:179
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:178
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:183
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/rfduinoLedButton/www/js/index.js	/^    },$/;"	method	line:182
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 RoboSmart	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/README.md	/^# RoboSmart$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^button {$/;"	function	line:18
-input[type=range]	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^input[type=range] {$/;"	function	line:25
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^#mainPage {$/;"	function	line:29
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^#detailPage {$/;"	function	line:33
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^#detailPage div {$/;"	function	line:38
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^#detailPage button {$/;"	function	line:42
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^ul {$/;"	function	line:47
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^li {$/;"	function	line:53
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/css/index.css	/^button {$/;"	function	line:62
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,  target-densitydpi=device-dpi" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <title>RoboSmart<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^            <h1>RoboSmart<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                <ul id="deviceList">                    $/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                <div>$/;"	function	line:21
-input	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                    <input type="checkbox" id="lightSwitch" name="lightSwitch" class="switch" \/>$/;"	function	line:22
-label	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                    <label for="lightSwitch">Switch<\/label>$/;"	function	line:23
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                <div class="rangeDiv">$/;"	function	line:25
-input	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                    <input type="range" min="0" max="255" value="0" name="dimmer" id="dimmer" class="topcoat-range"\/>$/;"	function	line:26
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:28
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:31
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:32
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:33
-arrayBufferToInt	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^var arrayBufferToInt = function (ab) {$/;"	function	line:21
-arrayBufferToInt	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^var arrayBufferToInt = function (ab) {$/;"	function	line:21
-robosmart.service	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^var robosmart = {$/;"	property	line:26
-robosmart.lightSwitch	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    service: 'FF10',$/;"	property	line:27
-robosmart.brightness	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    lightSwitch: 'FF11',$/;"	property	line:28
-robosmart.powerConsumed	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    brightness: 'FF12',$/;"	property	line:29
-robosmart.name	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    powerConsumed: 'FF16',$/;"	property	line:30
-robosmart.description	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    name: 'FF17',$/;"	property	line:31
-robosmart.room	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    description: 'FF18',$/;"	property	line:32
-robosmart.locationName	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    room: 'FF19',$/;"	property	line:33
-robosmart.locationGps	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    locationName: 'FF1b',$/;"	property	line:34
-robosmart.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    locationGps: 'FF1d',$/;"	property	line:35
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    initialize: function() {$/;"	function	line:40
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^var app = {$/;"	method	line:39
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:44
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:43
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:52
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:51
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:55
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:54
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:65
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:64
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    connect: function(e) {$/;"	function	line:75
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:74
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^            onConnect = function() {$/;"	function	line:77
-setOnOff	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    setOnOff: function(event) { \/\/ send data to robosmart$/;"	function	line:88
-app.setOnOff	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:87
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var success = function() {$/;"	function	line:90
-app.setOnOff.success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var success = function() {$/;"	function	line:90
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function() {$/;"	function	line:94
-app.setOnOff.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function() {$/;"	function	line:94
-setBrightness	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    setBrightness: function(event) { \/\/ send data to robosmart$/;"	function	line:104
-app.setBrightness	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:103
-success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var success = function() {$/;"	function	line:106
-app.setBrightness.success	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var success = function() {$/;"	function	line:106
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function() {$/;"	function	line:112
-app.setBrightness.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function() {$/;"	function	line:112
-syncUI	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    syncUI: function(deviceId) {$/;"	function	line:124
-app.syncUI	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:123
-switchCallback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var switchCallback = function(data) {$/;"	function	line:126
-app.syncUI.switchCallback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var switchCallback = function(data) {$/;"	function	line:126
-dimmerCallback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var dimmerCallback = function(data) {$/;"	function	line:130
-app.syncUI.dimmerCallback	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var dimmerCallback = function(data) {$/;"	function	line:130
-failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function(reason) {$/;"	function	line:134
-app.syncUI.failure	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^        var failure = function(reason) {$/;"	function	line:134
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:142
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:141
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:146
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:145
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:150
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:149
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:154
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/robosmart/www/js/index.js	/^    },$/;"	method	line:153
-Licensed to the Apache Software Foundation (ASF) under one	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# Licensed to the Apache Software Foundation (ASF) under one$/;"	function	line:3
-or more contributor license agreements.  See the NOTICE file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# or more contributor license agreements.  See the NOTICE file$/;"	function	line:4
-distributed with this work for additional information	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# distributed with this work for additional information$/;"	function	line:5
-regarding copyright ownership.  The ASF licenses this file	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# regarding copyright ownership.  The ASF licenses this file$/;"	function	line:6
-to you under the Apache License, Version 2.0 (the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# to you under the Apache License, Version 2.0 (the$/;"	function	line:7
-"License"); you may not use this file except in compliance	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# "License"); you may not use this file except in compliance$/;"	function	line:8
-with the License.  You may obtain a copy of the License at	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# with the License.  You may obtain a copy of the License at$/;"	function	line:9
-http://www.apache.org/licenses/LICENSE-2.0	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# http:\/\/www.apache.org\/licenses\/LICENSE-2.0$/;"	function	line:11
-Unless required by applicable law or agreed to in writing,	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# Unless required by applicable law or agreed to in writing,$/;"	function	line:13
-software distributed under the License is distributed on an	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# software distributed under the License is distributed on an$/;"	function	line:14
-"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY$/;"	function	line:15
-KIND, either express or implied.  See the License for the	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^#  KIND, either express or implied.  See the License for the$/;"	function	line:16
-specific language governing permissions and limitations	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# specific language governing permissions and limitations$/;"	function	line:17
-under the License.	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# under the License.$/;"	function	line:18
-Cordova Hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^# Cordova Hooks$/;"	function	line:21
-Hook Directories	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^## Hook Directories$/;"	function	line:31
-Script Interface	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^## Script Interface$/;"	function	line:64
-Writing hooks	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/hooks/README.md	/^## Writing hooks$/;"	function	line:77
 SensorTag	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/README.md	/^## SensorTag$/;"	function	line:1
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^body {$/;"	function	line:1
-h1	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^h1 {$/;"	function	line:14
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^button {$/;"	function	line:18
-#mainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^#mainPage {$/;"	function	line:24
-#detailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^#detailPage {$/;"	function	line:28
-#detailPage div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^#detailPage div {$/;"	function	line:33
-#detailPage button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^#detailPage button {$/;"	function	line:37
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^ul {$/;"	function	line:42
-li	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^li {$/;"	function	line:48
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/css/index.css	/^button {$/;"	function	line:57
-html	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^<html>$/;"	function	line:2
-head	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^    <head>$/;"	function	line:3
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <meta charset="utf-8" \/>$/;"	function	line:4
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <meta name="format-detection" content="telephone=no" \/>$/;"	function	line:5
-meta	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" \/>$/;"	function	line:6
-link	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <link rel="stylesheet" type="text\/css" href="css\/index.css" \/>$/;"	function	line:8
-title	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <title>SensorTag<\/title>$/;"	function	line:9
-body	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^    <body>$/;"	function	line:11
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <div class="app">$/;"	function	line:12
-h	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^            <h1>SensorTag<\/h1>$/;"	function	line:13
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^            <div id="mainPage">$/;"	function	line:14
-ul	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^                <ul id="deviceList">$/;"	function	line:15
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^                <button id="refreshButton">Refresh<\/button>$/;"	function	line:17
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^            <div id="detailPage">$/;"	function	line:19
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^                <div id="accelerometerData">waiting...<\/div>$/;"	function	line:20
-div	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^                <div id="buttonState"><\/div>$/;"	function	line:21
-button	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^                <button id="disconnectButton">Disconnect<\/button>$/;"	function	line:22
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <script type="text\/javascript" src="cordova.js"><\/script>$/;"	function	line:25
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <script type="text\/javascript" src="js\/index.js"><\/script>$/;"	function	line:26
-script	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/index.html	/^        <script type="text\/javascript">$/;"	function	line:27
-button.service	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^var button = {$/;"	property	line:22
-button.data	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    service: "FFE0",$/;"	property	line:23
-accelerometer.service	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^var accelerometer = {$/;"	property	line:29
-accelerometer.data	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    service: "F000AA10-0451-4000-B000-000000000000",$/;"	property	line:30
-accelerometer.configuration	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    data: "F000AA11-0451-4000-B000-000000000000", \/\/ read\/notify 3 bytes X : Y : Z$/;"	property	line:31
-accelerometer.period	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    configuration: "F000AA12-0451-4000-B000-000000000000", \/\/ read\/write 1 byte$/;"	property	line:32
-initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    initialize: function() {$/;"	function	line:37
-app.initialize	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^var app = {$/;"	method	line:36
-bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    bindEvents: function() {$/;"	function	line:41
-app.bindEvents	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:40
-onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    onDeviceReady: function() {$/;"	function	line:47
-app.onDeviceReady	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:46
-refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    refreshDeviceList: function() {$/;"	function	line:50
-app.refreshDeviceList	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:49
-onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    onDiscoverDevice: function(device) {$/;"	function	line:55
-app.onDiscoverDevice	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:54
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    connect: function(e) {$/;"	function	line:72
-app.connect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:71
-onConnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^            onConnect = function() {$/;"	function	line:74
-onButtonData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    onButtonData: function(data) {$/;"	function	line:90
-app.onButtonData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:89
-switch	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^        switch(a[0]) { \/\/ should really check the bits in case bit 3 is set too$/;"	function	line:94
-onAccelerometerData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    onAccelerometerData: function(data) {$/;"	function	line:113
-app.onAccelerometerData	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:112
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    disconnect: function(event) {$/;"	function	line:126
-app.disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:125
-showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    showMainPage: function() {$/;"	function	line:130
-app.showMainPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:129
-showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    showDetailPage: function() {$/;"	function	line:134
-app.showDetailPage	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:133
-onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    onError: function(reason) {$/;"	function	line:138
-app.onError	/Users/macmin/Documents/cordova-plugin-ble-central/examples/sensortag/www/js/index.js	/^    },$/;"	method	line:137
 name	/Users/macmin/Documents/cordova-plugin-ble-central/package.json	/^  "name": "cordova-plugin-ble-central",$/;"	function	line:2
 version	/Users/macmin/Documents/cordova-plugin-ble-central/package.json	/^  "version": "1.0.2",$/;"	function	line:3
 description	/Users/macmin/Documents/cordova-plugin-ble-central/package.json	/^  "description": "Bluetooth Low Energy (BLE) Central Plugin",$/;"	function	line:4
@@ -792,104 +94,11 @@ Testing the Plugin	/Users/macmin/Documents/cordova-plugin-ble-central/README.md	
 License	/Users/macmin/Documents/cordova-plugin-ble-central/README.md	/^# License$/;"	function	line:581
 Feedback	/Users/macmin/Documents/cordova-plugin-ble-central/README.md	/^# Feedback$/;"	function	line:585
 Other Bluetooth Plugins	/Users/macmin/Documents/cordova-plugin-ble-central/README.md	/^# Other Bluetooth Plugins$/;"	function	line:589
-com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
-BLECentralPlugin	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.LeScanCallback {$/;"	class	line:40
-SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String SCAN = "scan";$/;"	field	line:43	class:BLECentralPlugin	file:
-START_SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String START_SCAN = "startScan";$/;"	field	line:44	class:BLECentralPlugin	file:
-STOP_SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String STOP_SCAN = "stopScan";$/;"	field	line:45	class:BLECentralPlugin	file:
-LIST	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String LIST = "list";$/;"	field	line:47	class:BLECentralPlugin	file:
-CONNECT	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String CONNECT = "connect";$/;"	field	line:49	class:BLECentralPlugin	file:
-DISCONNECT	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String DISCONNECT = "disconnect";$/;"	field	line:50	class:BLECentralPlugin	file:
-READ	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String READ = "read";$/;"	field	line:52	class:BLECentralPlugin	file:
-WRITE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String WRITE = "write";$/;"	field	line:53	class:BLECentralPlugin	file:
-WRITE_WITHOUT_RESPONSE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String WRITE_WITHOUT_RESPONSE = "writeWithoutResponse";$/;"	field	line:54	class:BLECentralPlugin	file:
-NOTIFY	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String NOTIFY = "startNotification"; \/\/ register for characteristic notification$/;"	field	line:56	class:BLECentralPlugin	file:
-IS_ENABLED	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String IS_ENABLED = "isEnabled";$/;"	field	line:58	class:BLECentralPlugin	file:
-IS_CONNECTED	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String IS_CONNECTED  = "isConnected";$/;"	field	line:59	class:BLECentralPlugin	file:
-SETTINGS	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String SETTINGS = "showBluetoothSettings";$/;"	field	line:61	class:BLECentralPlugin	file:
-ENABLE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String ENABLE = "enable";$/;"	field	line:62	class:BLECentralPlugin	file:
-discoverCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    CallbackContext discoverCallback;$/;"	field	line:64	class:BLECentralPlugin
-enableBluetoothCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private CallbackContext enableBluetoothCallback;$/;"	field	line:65	class:BLECentralPlugin	file:
-TAG	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String TAG = "BLEPlugin";$/;"	field	line:67	class:BLECentralPlugin	file:
-REQUEST_ENABLE_BLUETOOTH	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final int REQUEST_ENABLE_BLUETOOTH = 1;$/;"	field	line:68	class:BLECentralPlugin	file:
-bluetoothAdapter	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    BluetoothAdapter bluetoothAdapter;$/;"	field	line:70	class:BLECentralPlugin
-peripherals	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    Map<String, Peripheral> peripherals = new LinkedHashMap<String, Peripheral>();$/;"	field	line:73	class:BLECentralPlugin
-execute	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {$/;"	method	line:76	class:BLECentralPlugin	signature:(String action, CordovaArgs args, CallbackContext callbackContext)
-parseServiceUUIDList	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private UUID[] parseServiceUUIDList(JSONArray jsonArray) throws JSONException {$/;"	method	line:189	class:BLECentralPlugin	file:	signature:(JSONArray jsonArray)
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void connect(CallbackContext callbackContext, String macAddress) {$/;"	method	line:200	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress)
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void disconnect(CallbackContext callbackContext, String macAddress) {$/;"	method	line:211	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress)
-read	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void read(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:221	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID)
-write	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void write(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID,$/;"	method	line:240	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
-registerNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void registerNotifyCallback(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:260	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID)
-findLowEnergyDevices	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void findLowEnergyDevices(CallbackContext callbackContext, UUID[] serviceUUIDs, int scanSeconds) {$/;"	method	line:276	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, UUID[] serviceUUIDs, int scanSeconds)
-listKnownDevices	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void listKnownDevices(CallbackContext callbackContext) {$/;"	method	line:354	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext)
-onLeScan	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {$/;"	method	line:369	class:BLECentralPlugin	signature:(BluetoothDevice device, int rssi, byte[] scanRecord)
-onActivityResult	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public void onActivityResult(int requestCode, int resultCode, Intent data) {$/;"	method	line:395	class:BLECentralPlugin	signature:(int requestCode, int resultCode, Intent data)
-uuidFromString	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private UUID uuidFromString(String uuid) {$/;"	method	line:415	class:BLECentralPlugin	file:	signature:(String uuid)
-com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^package com.megster.cordova.ble.central;$/;"	package	line:1
-BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^class BLECommand {$/;"	class	line:11
-READ	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public static int READ = 10000;$/;"	field	line:13	class:BLECommand
-REGISTER_NOTIFY	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public static int REGISTER_NOTIFY = 10001;$/;"	field	line:14	class:BLECommand
-callbackContext	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private CallbackContext callbackContext;$/;"	field	line:18	class:BLECommand	file:
-serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private UUID serviceUUID;$/;"	field	line:19	class:BLECommand	file:
-characteristicUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private UUID characteristicUUID;$/;"	field	line:20	class:BLECommand	file:
-data	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private byte[] data;$/;"	field	line:21	class:BLECommand	file:
-type	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private int type;$/;"	field	line:22	class:BLECommand	file:
-BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public BLECommand(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, int type) {$/;"	method	line:25	class:BLECommand	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, int type)
-BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public BLECommand(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int type) {$/;"	method	line:32	class:BLECommand	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int type)
-getType	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public int getType() {$/;"	method	line:40	class:BLECommand	signature:()
-getCallbackContext	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public CallbackContext getCallbackContext() {$/;"	method	line:44	class:BLECommand	signature:()
-getServiceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public UUID getServiceUUID() {$/;"	method	line:48	class:BLECommand	signature:()
-getCharacteristicUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public UUID getCharacteristicUUID() {$/;"	method	line:52	class:BLECommand	signature:()
-getData	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public byte[] getData() {$/;"	method	line:56	class:BLECommand	signature:()
 com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Helper.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
 Helper	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Helper.java	/^public class Helper {$/;"	class	line:21
 decodeProperties	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Helper.java	/^    public static JSONArray decodeProperties(BluetoothGattCharacteristic characteristic) {$/;"	method	line:23	class:Helper	signature:(BluetoothGattCharacteristic characteristic)
 decodePermissions	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Helper.java	/^    public static JSONArray decodePermissions(BluetoothGattCharacteristic characteristic) {$/;"	method	line:75	class:Helper	signature:(BluetoothGattCharacteristic characteristic)
 decodePermissions	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Helper.java	/^    public static JSONArray decodePermissions(BluetoothGattDescriptor descriptor) {$/;"	method	line:116	class:Helper	signature:(BluetoothGattDescriptor descriptor)
-com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
-Peripheral	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^public class Peripheral extends BluetoothGattCallback {$/;"	class	line:34
-CLIENT_CHARACTERISTIC_CONFIGURATION_UUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public final static UUID CLIENT_CHARACTERISTIC_CONFIGURATION_UUID = UUIDHelper.uuidFromString("2902");$/;"	field	line:38	class:Peripheral
-TAG	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private static final String TAG = "Peripheral";$/;"	field	line:39	class:Peripheral	file:
-device	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothDevice device;$/;"	field	line:41	class:Peripheral	file:
-advertisingData	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private byte[] advertisingData;$/;"	field	line:42	class:Peripheral	file:
-advertisingRSSI	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private int advertisingRSSI;$/;"	field	line:43	class:Peripheral	file:
-connected	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private boolean connected = false;$/;"	field	line:44	class:Peripheral	file:
-commandQueue	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private ConcurrentLinkedQueue<BLECommand> commandQueue = new ConcurrentLinkedQueue<BLECommand>();$/;"	field	line:45	class:Peripheral	file:
-bleProcessing	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private boolean bleProcessing;$/;"	field	line:46	class:Peripheral	file:
-gatt	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    BluetoothGatt gatt;$/;"	field	line:48	class:Peripheral
-connectCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext connectCallback;$/;"	field	line:50	class:Peripheral	file:
-readCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext readCallback;$/;"	field	line:51	class:Peripheral	file:
-writeCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext writeCallback;$/;"	field	line:52	class:Peripheral	file:
-notificationCallbacks	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private Map<String, CallbackContext> notificationCallbacks = new HashMap<String, CallbackContext>();$/;"	field	line:54	class:Peripheral	file:
-Peripheral	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public Peripheral(BluetoothDevice device, int advertisingRSSI, byte[] scanRecord) {$/;"	method	line:56	class:Peripheral	signature:(BluetoothDevice device, int advertisingRSSI, byte[] scanRecord)
-connect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void connect(CallbackContext callbackContext, Activity activity) {$/;"	method	line:64	class:Peripheral	signature:(CallbackContext callbackContext, Activity activity)
-disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void disconnect() {$/;"	method	line:74	class:Peripheral	signature:()
-asJSONObject	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public JSONObject asJSONObject()  {$/;"	method	line:83	class:Peripheral	signature:()
-asJSONObject	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public JSONObject asJSONObject(BluetoothGatt gatt) {$/;"	method	line:100	class:Peripheral	signature:(BluetoothGatt gatt)
-byteArrayToJSON	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    static JSONObject byteArrayToJSON(byte[] bytes) throws JSONException {$/;"	method	line:156	class:Peripheral	signature:(byte[] bytes)
-isConnected	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public boolean isConnected() {$/;"	method	line:163	class:Peripheral	signature:()
-getDevice	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public BluetoothDevice getDevice() {$/;"	method	line:167	class:Peripheral	signature:()
-onServicesDiscovered	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onServicesDiscovered(BluetoothGatt gatt, int status) {$/;"	method	line:172	class:Peripheral	signature:(BluetoothGatt gatt, int status)
-onConnectionStateChange	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {$/;"	method	line:187	class:Peripheral	signature:(BluetoothGatt gatt, int status, int newState)
-onCharacteristicChanged	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {$/;"	method	line:207	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic)
-onCharacteristicRead	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {$/;"	method	line:221	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status)
-onCharacteristicWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {$/;"	method	line:241	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status)
-onDescriptorWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {$/;"	method	line:260	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status)
-updateRssi	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void updateRssi(int rssi) {$/;"	method	line:266	class:Peripheral	signature:(int rssi)
-registerNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void registerNotifyCallback(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:271	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
-findNotifyCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothGattCharacteristic findNotifyCharacteristic(BluetoothGattService service, UUID characteristicUUID) {$/;"	method	line:335	class:Peripheral	file:	signature:(BluetoothGattService service, UUID characteristicUUID)
-readCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void readCharacteristic(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:360	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
-writeCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void writeCharacteristic(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType) {$/;"	method	line:390	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
-findWritableCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothGattCharacteristic findWritableCharacteristic(BluetoothGattService service, UUID characteristicUUID, int writeType) {$/;"	method	line:425	class:Peripheral	file:	signature:(BluetoothGattService service, UUID characteristicUUID, int writeType)
-queueRead	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueRead(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:444	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
-queueWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueWrite(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType) {$/;"	method	line:449	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
-queueRegisterNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueRegisterNotifyCallback(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:454	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
-queueCommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void queueCommand(BLECommand command) {$/;"	method	line:460	class:Peripheral	file:	signature:(BLECommand command)
-commandCompleted	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void commandCompleted() {$/;"	method	line:474	class:Peripheral	file:	signature:()
-processCommands	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void processCommands() {$/;"	method	line:481	class:Peripheral	file:	signature:()
-generateHashKey	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private String generateHashKey(BluetoothGattCharacteristic characteristic) {$/;"	method	line:514	class:Peripheral	file:	signature:(BluetoothGattCharacteristic characteristic)
-generateHashKey	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private String generateHashKey(UUID serviceUUID, BluetoothGattCharacteristic characteristic) {$/;"	method	line:518	class:Peripheral	file:	signature:(UUID serviceUUID, BluetoothGattCharacteristic characteristic)
 com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/UUIDHelper.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
 UUIDHelper	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/UUIDHelper.java	/^public class UUIDHelper {$/;"	class	line:21
 UUID_BASE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/UUIDHelper.java	/^    public static final String UUID_BASE = "0000XXXX-0000-1000-8000-00805f9b34fb";$/;"	field	line:24	class:UUIDHelper
@@ -1061,6 +270,22 @@ createActionButton	/Users/macmin/Documents/cordova-plugin-ble-central/tests/test
 createActionButton	/Users/macmin/Documents/cordova-plugin-ble-central/tests/tests.js	/^        createActionButton('Enable Bluetooth', function() {$/;"	function	line:39
 createActionButton	/Users/macmin/Documents/cordova-plugin-ble-central/tests/tests.js	/^    createActionButton('Scan', function() {$/;"	function	line:53
 exports.defineManualTests	/Users/macmin/Documents/cordova-plugin-ble-central/tests/tests.js	/^};$/;"	function	line:14
+com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^package com.megster.cordova.ble.central;$/;"	package	line:1
+BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^class BLECommand {$/;"	class	line:11
+READ	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public static int READ = 10000;$/;"	field	line:13	class:BLECommand
+REGISTER_NOTIFY	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public static int REGISTER_NOTIFY = 10001;$/;"	field	line:14	class:BLECommand
+callbackContext	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private CallbackContext callbackContext;$/;"	field	line:18	class:BLECommand	file:
+serviceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private UUID serviceUUID;$/;"	field	line:19	class:BLECommand	file:
+characteristicUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private UUID characteristicUUID;$/;"	field	line:20	class:BLECommand	file:
+data	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private byte[] data;$/;"	field	line:21	class:BLECommand	file:
+type	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    private int type;$/;"	field	line:22	class:BLECommand	file:
+BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public BLECommand(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, int type) {$/;"	method	line:25	class:BLECommand	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, int type)
+BLECommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public BLECommand(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int type) {$/;"	method	line:32	class:BLECommand	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int type)
+getType	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public int getType() {$/;"	method	line:40	class:BLECommand	signature:()
+getCallbackContext	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public CallbackContext getCallbackContext() {$/;"	method	line:44	class:BLECommand	signature:()
+getServiceUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public UUID getServiceUUID() {$/;"	method	line:48	class:BLECommand	signature:()
+getCharacteristicUUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public UUID getCharacteristicUUID() {$/;"	method	line:52	class:BLECommand	signature:()
+getData	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECommand.java	/^    public byte[] getData() {$/;"	method	line:56	class:BLECommand	signature:()
 stringToArrayBuffer	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^var stringToArrayBuffer = function(str) {$/;"	function	line:19
 stringToArrayBuffer	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^var stringToArrayBuffer = function(str) {$/;"	function	line:19
 base64ToArrayBuffer	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^var base64ToArrayBuffer = function(b64) {$/;"	function	line:28
@@ -1109,5 +334,90 @@ isEnabled	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    is
 module.exports.isEnabled	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    },$/;"	method	line:136
 enable	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    enable: function (success, failure) {$/;"	function	line:142
 module.exports.enable	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    },$/;"	method	line:140
-showBluetoothSettings	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    showBluetoothSettings: function (success, failure) {$/;"	function	line:147
-module.exports.showBluetoothSettings	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    },$/;"	method	line:144
+increaseMTU	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    increaseMTU: function (device_id, success, failure){$/;"	function	line:146
+module.exports.increaseMTU	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    },$/;"	method	line:144
+showBluetoothSettings	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    showBluetoothSettings: function (success, failure) {$/;"	function	line:150
+module.exports.showBluetoothSettings	/Users/macmin/Documents/cordova-plugin-ble-central/www/ble.js	/^    },$/;"	method	line:148
+com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
+Peripheral	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^public class Peripheral extends BluetoothGattCallback {$/;"	class	line:34
+CLIENT_CHARACTERISTIC_CONFIGURATION_UUID	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public final static UUID CLIENT_CHARACTERISTIC_CONFIGURATION_UUID = UUIDHelper.uuidFromString("2902");$/;"	field	line:38	class:Peripheral
+TAG	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private static final String TAG = "Peripheral";$/;"	field	line:39	class:Peripheral	file:
+device	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothDevice device;$/;"	field	line:41	class:Peripheral	file:
+advertisingData	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private byte[] advertisingData;$/;"	field	line:42	class:Peripheral	file:
+advertisingRSSI	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private int advertisingRSSI;$/;"	field	line:43	class:Peripheral	file:
+connected	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private boolean connected = false;$/;"	field	line:44	class:Peripheral	file:
+commandQueue	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private ConcurrentLinkedQueue<BLECommand> commandQueue = new ConcurrentLinkedQueue<BLECommand>();$/;"	field	line:45	class:Peripheral	file:
+bleProcessing	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private boolean bleProcessing;$/;"	field	line:46	class:Peripheral	file:
+gatt	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    BluetoothGatt gatt;$/;"	field	line:48	class:Peripheral
+connectCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext connectCallback;$/;"	field	line:50	class:Peripheral	file:
+readCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext readCallback;$/;"	field	line:51	class:Peripheral	file:
+writeCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext writeCallback;$/;"	field	line:52	class:Peripheral	file:
+mtuCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private CallbackContext mtuCallback;$/;"	field	line:53	class:Peripheral	file:
+notificationCallbacks	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private Map<String, CallbackContext> notificationCallbacks = new HashMap<String, CallbackContext>();$/;"	field	line:55	class:Peripheral	file:
+Peripheral	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public Peripheral(BluetoothDevice device, int advertisingRSSI, byte[] scanRecord) {$/;"	method	line:57	class:Peripheral	signature:(BluetoothDevice device, int advertisingRSSI, byte[] scanRecord)
+connect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void connect(CallbackContext callbackContext, Activity activity) {$/;"	method	line:65	class:Peripheral	signature:(CallbackContext callbackContext, Activity activity)
+disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void disconnect() {$/;"	method	line:75	class:Peripheral	signature:()
+bumpMTU	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void bumpMTU(CallbackContext callbackContext){$/;"	method	line:84	class:Peripheral	signature:(CallbackContext callbackContext)
+asJSONObject	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public JSONObject asJSONObject()  {$/;"	method	line:89	class:Peripheral	signature:()
+asJSONObject	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public JSONObject asJSONObject(BluetoothGatt gatt) {$/;"	method	line:106	class:Peripheral	signature:(BluetoothGatt gatt)
+byteArrayToJSON	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    static JSONObject byteArrayToJSON(byte[] bytes) throws JSONException {$/;"	method	line:162	class:Peripheral	signature:(byte[] bytes)
+isConnected	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public boolean isConnected() {$/;"	method	line:169	class:Peripheral	signature:()
+getDevice	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public BluetoothDevice getDevice() {$/;"	method	line:173	class:Peripheral	signature:()
+onMtuChanged	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onMtuChanged(BluetoothGatt gatt, int mtu, int status){$/;"	method	line:178	class:Peripheral	signature:(BluetoothGatt gatt, int mtu, int status)
+onServicesDiscovered	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onServicesDiscovered(BluetoothGatt gatt, int status) {$/;"	method	line:188	class:Peripheral	signature:(BluetoothGatt gatt, int status)
+onConnectionStateChange	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {$/;"	method	line:203	class:Peripheral	signature:(BluetoothGatt gatt, int status, int newState)
+onCharacteristicChanged	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicChanged(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic) {$/;"	method	line:223	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic)
+onCharacteristicRead	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicRead(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {$/;"	method	line:237	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status)
+onCharacteristicWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onCharacteristicWrite(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status) {$/;"	method	line:257	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattCharacteristic characteristic, int status)
+onDescriptorWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void onDescriptorWrite(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status) {$/;"	method	line:276	class:Peripheral	signature:(BluetoothGatt gatt, BluetoothGattDescriptor descriptor, int status)
+updateRssi	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void updateRssi(int rssi) {$/;"	method	line:282	class:Peripheral	signature:(int rssi)
+registerNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void registerNotifyCallback(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:287	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
+findNotifyCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothGattCharacteristic findNotifyCharacteristic(BluetoothGattService service, UUID characteristicUUID) {$/;"	method	line:351	class:Peripheral	file:	signature:(BluetoothGattService service, UUID characteristicUUID)
+readCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void readCharacteristic(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:376	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
+writeCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void writeCharacteristic(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType) {$/;"	method	line:406	class:Peripheral	file:	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
+findWritableCharacteristic	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private BluetoothGattCharacteristic findWritableCharacteristic(BluetoothGattService service, UUID characteristicUUID, int writeType) {$/;"	method	line:441	class:Peripheral	file:	signature:(BluetoothGattService service, UUID characteristicUUID, int writeType)
+queueRead	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueRead(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:460	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
+queueWrite	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueWrite(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType) {$/;"	method	line:465	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
+queueRegisterNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    public void queueRegisterNotifyCallback(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:470	class:Peripheral	signature:(CallbackContext callbackContext, UUID serviceUUID, UUID characteristicUUID)
+queueCommand	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void queueCommand(BLECommand command) {$/;"	method	line:476	class:Peripheral	file:	signature:(BLECommand command)
+commandCompleted	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void commandCompleted() {$/;"	method	line:490	class:Peripheral	file:	signature:()
+processCommands	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private void processCommands() {$/;"	method	line:497	class:Peripheral	file:	signature:()
+generateHashKey	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private String generateHashKey(BluetoothGattCharacteristic characteristic) {$/;"	method	line:530	class:Peripheral	file:	signature:(BluetoothGattCharacteristic characteristic)
+generateHashKey	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/Peripheral.java	/^    private String generateHashKey(UUID serviceUUID, BluetoothGattCharacteristic characteristic) {$/;"	method	line:534	class:Peripheral	file:	signature:(UUID serviceUUID, BluetoothGattCharacteristic characteristic)
+com.megster.cordova.ble.central	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^package com.megster.cordova.ble.central;$/;"	package	line:15
+BLECentralPlugin	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.LeScanCallback {$/;"	class	line:40
+SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String SCAN = "scan";$/;"	field	line:43	class:BLECentralPlugin	file:
+START_SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String START_SCAN = "startScan";$/;"	field	line:44	class:BLECentralPlugin	file:
+STOP_SCAN	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String STOP_SCAN = "stopScan";$/;"	field	line:45	class:BLECentralPlugin	file:
+LIST	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String LIST = "list";$/;"	field	line:47	class:BLECentralPlugin	file:
+CONNECT	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String CONNECT = "connect";$/;"	field	line:49	class:BLECentralPlugin	file:
+DISCONNECT	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String DISCONNECT = "disconnect";$/;"	field	line:50	class:BLECentralPlugin	file:
+READ	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String READ = "read";$/;"	field	line:52	class:BLECentralPlugin	file:
+WRITE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String WRITE = "write";$/;"	field	line:53	class:BLECentralPlugin	file:
+WRITE_WITHOUT_RESPONSE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String WRITE_WITHOUT_RESPONSE = "writeWithoutResponse";$/;"	field	line:54	class:BLECentralPlugin	file:
+NOTIFY	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String NOTIFY = "startNotification"; \/\/ register for characteristic notification$/;"	field	line:56	class:BLECentralPlugin	file:
+IS_ENABLED	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String IS_ENABLED = "isEnabled";$/;"	field	line:58	class:BLECentralPlugin	file:
+IS_CONNECTED	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String IS_CONNECTED  = "isConnected";$/;"	field	line:59	class:BLECentralPlugin	file:
+SETTINGS	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String SETTINGS = "showBluetoothSettings";$/;"	field	line:61	class:BLECentralPlugin	file:
+ENABLE	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String ENABLE = "enable";$/;"	field	line:62	class:BLECentralPlugin	file:
+BMTU	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String BMTU = "increaseMTU";$/;"	field	line:64	class:BLECentralPlugin	file:
+discoverCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    CallbackContext discoverCallback;$/;"	field	line:67	class:BLECentralPlugin
+enableBluetoothCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private CallbackContext enableBluetoothCallback;$/;"	field	line:68	class:BLECentralPlugin	file:
+mtuCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    CallbackContext mtuCallback;$/;"	field	line:69	class:BLECentralPlugin
+TAG	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final String TAG = "BLEPlugin";$/;"	field	line:71	class:BLECentralPlugin	file:
+REQUEST_ENABLE_BLUETOOTH	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private static final int REQUEST_ENABLE_BLUETOOTH = 1;$/;"	field	line:72	class:BLECentralPlugin	file:
+bluetoothAdapter	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    BluetoothAdapter bluetoothAdapter;$/;"	field	line:74	class:BLECentralPlugin
+peripherals	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    Map<String, Peripheral> peripherals = new LinkedHashMap<String, Peripheral>();$/;"	field	line:77	class:BLECentralPlugin
+execute	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public boolean execute(String action, CordovaArgs args, CallbackContext callbackContext) throws JSONException {$/;"	method	line:80	class:BLECentralPlugin	signature:(String action, CordovaArgs args, CallbackContext callbackContext)
+parseServiceUUIDList	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private UUID[] parseServiceUUIDList(JSONArray jsonArray) throws JSONException {$/;"	method	line:197	class:BLECentralPlugin	file:	signature:(JSONArray jsonArray)
+connect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void connect(CallbackContext callbackContext, String macAddress) {$/;"	method	line:208	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress)
+disconnect	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void disconnect(CallbackContext callbackContext, String macAddress) {$/;"	method	line:219	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress)
+read	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void read(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:229	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID)
+write	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void write(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID,$/;"	method	line:248	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID, byte[] data, int writeType)
+registerNotifyCallback	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void registerNotifyCallback(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID) {$/;"	method	line:268	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress, UUID serviceUUID, UUID characteristicUUID)
+findLowEnergyDevices	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void findLowEnergyDevices(CallbackContext callbackContext, UUID[] serviceUUIDs, int scanSeconds) {$/;"	method	line:284	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, UUID[] serviceUUIDs, int scanSeconds)
+listKnownDevices	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void listKnownDevices(CallbackContext callbackContext) {$/;"	method	line:362	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext)
+bumpMTU	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private void bumpMTU(CallbackContext callbackContext, String macAddress) {$/;"	method	line:376	class:BLECentralPlugin	file:	signature:(CallbackContext callbackContext, String macAddress)
+onLeScan	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public void onLeScan(BluetoothDevice device, int rssi, byte[] scanRecord) {$/;"	method	line:393	class:BLECentralPlugin	signature:(BluetoothDevice device, int rssi, byte[] scanRecord)
+onActivityResult	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    public void onActivityResult(int requestCode, int resultCode, Intent data) {$/;"	method	line:419	class:BLECentralPlugin	signature:(int requestCode, int resultCode, Intent data)
+uuidFromString	/Users/macmin/Documents/cordova-plugin-ble-central/src/android/BLECentralPlugin.java	/^    private UUID uuidFromString(String uuid) {$/;"	method	line:439	class:BLECentralPlugin	file:	signature:(String uuid)

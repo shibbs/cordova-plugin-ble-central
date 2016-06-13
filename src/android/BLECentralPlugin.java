@@ -60,9 +60,13 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
     private static final String SETTINGS = "showBluetoothSettings";
     private static final String ENABLE = "enable";
+
+    private static final String BMTU = "increaseMTU";
+
     // callbacks
     CallbackContext discoverCallback;
     private CallbackContext enableBluetoothCallback;
+    CallbackContext mtuCallback;
 
     private static final String TAG = "BLEPlugin";
     private static final int REQUEST_ENABLE_BLUETOOTH = 1;
@@ -177,7 +181,11 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             Intent intent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             cordova.startActivityForResult(this, intent, REQUEST_ENABLE_BLUETOOTH);
 
-        } else {
+        } else if (action.equals(BMTU)){
+
+            String macAddress = args.getString(0);
+            bumpMTU(callbackContext, macAddress);
+        }else {
 
             validAction = false;
 
@@ -363,6 +371,22 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
         PluginResult result = new PluginResult(PluginResult.Status.OK, json);
         callbackContext.sendPluginResult(result);
+    }
+
+    private void bumpMTU(CallbackContext callbackContext, String macAddress) {
+
+      Peripheral peripheral = peripherals.get(macAddress);
+
+      if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP){
+        callbackContext.error("Device not supported. Requires Lollipop or newer.");
+        return;
+      }
+
+      if(peripheral == null){
+        callbackContext.error("Peripheral not connected");
+      }else{
+        peripheral.bumpMTU(callbackContext);
+      }
     }
 
     @Override

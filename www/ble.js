@@ -97,7 +97,7 @@ module.exports = {
     write: function (device_id, service_uuid, characteristic_uuid, value, success, failure) {
         cordova.exec(success, failure, 'BLE', 'write', [device_id, service_uuid, characteristic_uuid, value]);
     },
-    
+
     // params is a fairly complicated array
     uploadFirmware: function (filePath, successCallback, errorCallback, params) {
         console.log("ble.js uploadFirmwareCall");
@@ -142,11 +142,13 @@ module.exports = {
     enable: function (success, failure) {
         cordova.exec(success, failure, "BLE", "enable", []);
     },
-               
+
+    increaseMTU: function (device_id, success, failure){
+        cordova.exec(success, failure, "BLE", "increaseMTU", [device_id]);
+    },
 
     showBluetoothSettings: function (success, failure) {
         cordova.exec(success, failure, "BLE", "showBluetoothSettings", []);
     }
 
 };
-
