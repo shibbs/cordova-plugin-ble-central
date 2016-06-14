@@ -176,7 +176,7 @@ public class Peripheral extends BluetoothGattCallback {
 
     @Override
     public void onMtuChanged(BluetoothGatt gatt, int mtu, int status){
-      if(status == GATT_SUCCESS){
+      if(status == BluetoothGatt.GATT_SUCCESS){
         PluginResult result = new PluginResult(PluginResult.Status.OK, mtu);
         mtuCallback.sendPluginResult(result); // TODO: callbackContext needs to be real
       }{
