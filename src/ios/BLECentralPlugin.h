@@ -28,6 +28,7 @@
 
 @interface BLECentralPlugin : CDVPlugin <CBCentralManagerDelegate, CBPeripheralDelegate, DFUOperationsDelegate> {
     NSString* discoverPeripherialCallbackId;
+    NSString* stateCallbackId;
     NSMutableDictionary* connectCallbacks;
     NSMutableDictionary *readCallbacks;
     NSMutableDictionary *writeCallbacks;
@@ -35,6 +36,7 @@
     NSMutableDictionary *notificationCallbacks;
     NSMutableDictionary *stopNotificationCallbacks;
     NSMutableDictionary *connectCallbackLatches;
+    NSMutableDictionary *readRSSICallbacks;
 }
 
 @property (strong, nonatomic) NSMutableSet *peripherals;
@@ -46,6 +48,7 @@
 
 - (void)scan:(CDVInvokedUrlCommand *)command;
 - (void)startScan:(CDVInvokedUrlCommand *)command;
+- (void)startScanWithOptions:(CDVInvokedUrlCommand *)command;
 - (void)stopScan:(CDVInvokedUrlCommand *)command;
 
 - (void)connect:(CDVInvokedUrlCommand *)command;
@@ -57,10 +60,17 @@
 
 - (void)startNotification:(CDVInvokedUrlCommand *)command;
 - (void)stopNotification:(CDVInvokedUrlCommand *)command;
+- (void)connectToPeripheral :(CBPeripheral *)peripheral;
 
 - (void)isEnabled:(CDVInvokedUrlCommand *)command;
 - (void)isConnected:(CDVInvokedUrlCommand *)command;
-- (void)connectToPeripheral :(CBPeripheral *)peripheral;
+
+- (void)startStateNotifications:(CDVInvokedUrlCommand *)command;
+- (void)stopStateNotifications:(CDVInvokedUrlCommand *)command;
+
+- (void)onReset;
+
+- (void)readRSSI:(CDVInvokedUrlCommand *)command;
 
 @end
 
