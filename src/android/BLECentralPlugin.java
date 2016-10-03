@@ -184,7 +184,8 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
         } else if (action.equals(BMTU)){
 
             String macAddress = args.getString(0);
-            bumpMTU(callbackContext, macAddress);
+            int mtu = args.getInt(1);
+            bumpMTU(callbackContext, macAddress, mtu);
         }else {
 
             validAction = false;
@@ -373,7 +374,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
         callbackContext.sendPluginResult(result);
     }
 
-    private void bumpMTU(CallbackContext callbackContext, String macAddress) {
+    private void bumpMTU(CallbackContext callbackContext, String macAddress, int mtu) {
 
       Peripheral peripheral = peripherals.get(macAddress);
 
@@ -385,7 +386,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
       if(peripheral == null){
         callbackContext.error("Peripheral not connected");
       }else{
-        peripheral.bumpMTU(callbackContext);
+        peripheral.bumpMTU(callbackContext, mtu);
       }
     }
 

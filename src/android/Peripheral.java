@@ -81,9 +81,9 @@ public class Peripheral extends BluetoothGattCallback {
         }
     }
 
-    public void bumpMTU(CallbackContext callbackContext){
+    public void bumpMTU(CallbackContext callbackContext, int mtu){
       mtuCallback = callbackContext;
-      gatt.requestMtu(70);
+      gatt.requestMtu(mtu);
     }
 
     public JSONObject asJSONObject()  {

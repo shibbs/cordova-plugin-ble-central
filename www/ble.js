@@ -143,8 +143,8 @@ module.exports = {
         cordova.exec(success, failure, "BLE", "enable", []);
     },
 
-    increaseMTU: function (device_id, success, failure){
-        cordova.exec(success, failure, "BLE", "increaseMTU", [device_id]);
+    increaseMTU: function (device_id, mtu, success, failure){
+        cordova.exec(success, failure, "BLE", "increaseMTU", [device_id, mtu]);
     },
 
     showBluetoothSettings: function (success, failure) {
