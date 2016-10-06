@@ -301,11 +301,6 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
         } else {
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
               LOG.d("FLED", "Scanning with new API");
-              ArrayList filters = new ArrayList();
-              ScanFilter filter = new ScanFilter.Builder().setDeviceName("Pulse").build();
-              filters.add(filter);
-
-              ScanSettings settings = new ScanSettings.Builder().setScanMode(ScanSettings.SCAN_MODE_LOW_LATENCY).build();
 
               final ScanCallback callback = new ScanCallback() {
                    @Override
@@ -337,7 +332,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
               BluetoothLeScanner scanner = bluetoothAdapter.getBluetoothLeScanner();
 
-              scanner.startScan(filters, settings, callback);
+              scanner.startScan(callback);
             }else{
               bluetoothAdapter.startLeScan(this);
             }
