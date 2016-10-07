@@ -95,14 +95,34 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             int scanSeconds = args.getInt(1);
             findLowEnergyDevices(callbackContext, serviceUUIDs, scanSeconds);
 
-        } else if (action.equals(START_SCAN)) {
+                } else if (action.equals(START_SCAN)) {
 
-            UUID[] serviceUUIDs = parseServiceUUIDList(args.getJSONArray(0));
-            findLowEnergyDevices(callbackContext, serviceUUIDs, -1);
+                    UUID[] serviceUUIDs = parseServiceUUIDList(args.getJSONArray(0));
+                    findLowEnergyDevices(callbackContext, serviceUUIDs, -1);
 
-        } else if (action.equals(STOP_SCAN)) {
+                } else if (action.equals(STOP_SCAN)) {
 
-            bluetoothAdapter.stopLeScan(this);
+                    bluetoothAdapter.stopLeScan(this);
+                    if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        final ScanCallback stopCallback = new ScanCallback() {
+                            @Override
+                            public void onScanResult(int callbackType, ScanResult result) {
+                        super.onScanResult(callbackType, result);
+                    }
+
+                    @Override
+                    public void onScanFailed(int errorCode) {
+                        super.onScanFailed(errorCode);
+                        LOG.v("ScanTask", "Some error occurred");
+                    }
+                };
+
+                BluetoothLeScanner scanner = bluetoothAdapter.getBluetoothLeScanner();
+
+                System.out.println("Stopping LE scan");
+                scanner.stopScan(stopCallback);
+            }
+
             callbackContext.success();
 
         } else if (action.equals(LIST)) {
