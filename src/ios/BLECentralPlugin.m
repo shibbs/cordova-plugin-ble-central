@@ -30,6 +30,9 @@
 
 @synthesize manager;
 @synthesize peripherals;
+@synthesize dfuOperations;
+
+NSURL *filePath = NULL;
 
 - (void)pluginInitialize {
 
@@ -37,6 +40,9 @@
     NSLog(@"(c)2014-2016 Don Coleman");
 
     [super pluginInitialize];
+    //set up the dfu objects
+    dfuOperations = [[DFUOperations alloc] initWithDelegate:self];
+    self.dfuHelper = [[DFUHelper alloc] initWithData:dfuOperations];
 
     peripherals = [NSMutableSet set];
     manager = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
@@ -45,6 +51,7 @@
     connectCallbackLatches = [NSMutableDictionary new];
     readCallbacks = [NSMutableDictionary new];
     writeCallbacks = [NSMutableDictionary new];
+    dfuCallbacks = [NSMutableDictionary new];
     notificationCallbacks = [NSMutableDictionary new];
     stopNotificationCallbacks = [NSMutableDictionary new];
     bluetoothStates = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -438,6 +445,8 @@
 
     // NOTE: it's inefficient to discover all services
     [peripheral discoverServices:nil];
+    [dfuOperations setPeripheral:peripheral];// looping the dfu stuff in so that it can connect to the peripheral as well
+
 
     // NOTE: not calling connect success until characteristics are discovered
 }
@@ -466,6 +475,13 @@
         CDVPluginResult *pluginResult = nil;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR messageAsDictionary:dict];
         [self.commandDelegate sendPluginResult:pluginResult callbackId:connectCallbackId];
+    }
+
+    if(uploading ) { //if we're currently doing the dfu stuff...
+        //now put the DFU stuff in charge
+        [dfuOperations setCentralManager:manager];
+        [dfuOperations connectDevice:peripheral];
+
     }
 
 }
@@ -506,6 +522,11 @@
     NSString *peripheralUUIDString = [peripheral uuidAsString];
     NSString *connectCallbackId = [connectCallbacks valueForKey:peripheralUUIDString];
     NSMutableSet *latch = [connectCallbackLatches valueForKey:peripheralUUIDString];
+
+    if( [service.UUID isEqual:[CBUUID UUIDWithString:dfuServiceUUIDString]  ]) {
+        NSLog(@"FOUND DFU CHARACTERISTICS");
+        [self.dfuHelper handleDFUService: service];
+    }
 
     [latch removeObject:service];
 
@@ -609,10 +630,170 @@
     }
 
 }
+- (void)uploadFirmware:(CDVInvokedUrlCommand*)command {
+//    NSData *message = [command.arguments objectAtIndex:3]; // This is binary
+    NSString *temp  = [command.arguments objectAtIndex:0]; // get filepath string
+//    NSString *urlString = [NSString stringWithFormat:@"%@", item.image];
+//NSURL *url = [NSURL URLWithString:[urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+//
+//NSURL *url = [NSURL URLWithString:@"http://www.google.com"];
+    filePath = [NSURL URLWithString: temp];
+
+    NSLog(@"UploadFirmwareCalled, filepath : %@" , filePath);
+
+//    dfuCallbacks =[command.arguments objectAtIndex:0] ;
+    dfuCallbacks = [command.callbackId copy];
+
+    [dfuOperations setCentralManager:manager]; //set the dfu operations as the central manager now
+//    [dfuOperations connectDevice:peripheral];
+
+    uploading = true;
+    [self.dfuHelper checkAndPerformDFU: filePath];
+
+}
 
 - (void)peripheralDidUpdateRSSI:(CBPeripheral*)peripheral error:(NSError*)error {
     [self peripheral: peripheral didReadRSSI: [peripheral RSSI] error: error];
 }
+
+-(void)startDFU:(NSTimer*)theTimer
+{
+    [self.dfuHelper checkAndPerformDFU: filePath];
+}
+#pragma mark DFUOperations delegate methods
+
+bool uploading = false;
+
+-(void)onDeviceConnected:(CBPeripheral *)peripheral
+{
+    NSLog(@"main view onDeviceConnected %@",peripheral.name);
+    if( uploading ) {   //if we're reconnecting during an interrupted dfu operation, then just send the shit
+        if( filePath  != NULL)
+            [NSTimer scheduledTimerWithTimeInterval:2
+                                 target:self
+                               selector:@selector(startDFU:)
+                               userInfo:NULL
+                                repeats:NO];
+
+    }else{
+        [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+//        [self.didConnectPeripheral peripheral ];
+    }
+
+}
+
+
+-(void)onDeviceConnectedWithVersion:(CBPeripheral *)peripheral
+{
+    NSLog(@"onDeviceConnectedWithVersion %@",peripheral.name);
+
+
+}
+
+-(void)onDeviceDisconnected:(CBPeripheral *)peripheral
+{
+    NSLog(@"blecentralPlugin.m device disconnected %@",peripheral.name);
+    NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+
+    if(uploading ) { //if we're currently doing the dfu stuff...
+        //now put the DFU stuff in charge
+        NSLog(@"STILL UPLOADING");
+        [dfuOperations setCentralManager:manager];
+        [dfuOperations connectDevice:peripheral];
+
+    } else{
+        NSLog(@"DONE UPLOADING");
+        [peripheral setDelegate:self]; //set peripheral delegate back to this ble thing if we're not currently uploading
+    }
+
+    [manager connectPeripheral:peripheral options:options];
+}
+
+-(void)onReadDFUVersion:(int)version
+{
+    NSLog(@"onReadDFUVersion %d",version);
+    self.dfuHelper.dfuVersion = version;
+   NSLog(@"DFU Version: %d",self.dfuHelper.dfuVersion);
+
+}
+
+-(void)onDFUStarted
+{
+    NSLog(@"onDFUStarted");
+
+}
+
+-(void)onDFUCancelled
+{
+    NSLog(@"onDFUCancelled");
+
+}
+
+-(void)onSoftDeviceUploadStarted
+{
+    NSLog(@"onSoftDeviceUploadStarted");
+}
+
+-(void)onSoftDeviceUploadCompleted
+{
+    NSLog(@"onSoftDeviceUploadCompleted");
+}
+
+
+-(void)onAppUploadCompleted
+{
+    NSLog(@"onAppUploadCompleted");
+}
+
+
+-(void)onBootloaderUploadStarted
+{
+    NSLog(@"onBootloaderUploadStarted");
+
+}
+
+-(void)onBootloaderUploadCompleted
+{
+    NSLog(@"onBootloaderUploadCompleted");
+
+}
+
+-(void)onTransferPercentage:(int)percentage
+{
+    NSLog(@"onTransferPercentage %d",percentage);
+    if (dfuCallbacks) {
+        CDVPluginResult *pluginResult = nil;
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:percentage];
+        [pluginResult setKeepCallbackAsBool:TRUE];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
+    }
+
+}
+
+-(void)onSuccessfulFileTranferred
+{
+    NSLog(@"OnSuccessfulFileTransferred");
+    [self onTransferPercentage: 100];
+    NSLog(@"Setting manager delegate to self");
+    self.manager.delegate = self; //set up ourself as the central manager again
+    uploading = false;
+    if (dfuCallbacks) {
+        CDVPluginResult *pluginResult = nil;
+        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsInt:101 ];
+        [pluginResult setKeepCallbackAsBool:TRUE];
+        [self.commandDelegate sendPluginResult:pluginResult callbackId:dfuCallbacks ];
+
+    }
+
+}
+
+-(void)onError:(NSString *)errorMessage
+{
+    NSLog(@"OnError %@",errorMessage);
+
+}
+
+
 
 - (void)peripheral:(CBPeripheral*)peripheral didReadRSSI:(NSNumber*)rssi error:(NSError*)error {
     NSLog(@"didReadRSSI %@", rssi);
