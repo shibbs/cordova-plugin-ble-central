@@ -71,11 +71,10 @@ module.exports = {
     },
 
 
-    // this will probably be removed
-    list: function (success, failure) {
-        cordova.exec(success, failure, 'BLE', 'list', []);
+   list: function (service_id, success, failure) {
+        cordova.exec(success, failure, 'BLE', 'list', [service_id]);
     },
-
+    
     connect: function (device_id, success, failure) {
         var successWrapper = function(peripheral) {
             convertToNativeJS(peripheral);
