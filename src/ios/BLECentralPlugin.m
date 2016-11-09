@@ -90,6 +90,14 @@ NSURL *filePath = NULL;
 
 }
 
+- (void)list: (CDVInvokedUrlCommand*)command {
+  NSString *serviceId = [command.arguments objectAtIndex:0];
+  NSArray *connectedDevices = [manager retrieveConnectedPeripheralsWithServices:@[[CBUUID UUIDWithString:serviceId]]];
+  CDVPluginResult *pluginResult = nil;
+  pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:connectedDevices];
+
+}
+
 // disconnect: function (device_id, success, failure) {
 - (void)disconnect:(CDVInvokedUrlCommand*)command {
     NSLog(@"disconnect");
