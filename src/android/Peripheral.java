@@ -38,7 +38,7 @@ public class Peripheral extends BluetoothGattCallback {
     public final static UUID CLIENT_CHARACTERISTIC_CONFIGURATION_UUID = UUIDHelper.uuidFromString("2902");
     private static final String TAG = "Peripheral";
 
-    private BluetoothDevice device;
+    public BluetoothDevice device;
     private byte[] advertisingData;
     private int advertisingRSSI;
     private boolean connected = false;
