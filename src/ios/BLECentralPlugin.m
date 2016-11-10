@@ -91,12 +91,22 @@ NSURL *filePath = NULL;
 }
 
 - (void)list: (CDVInvokedUrlCommand*)command {
-  NSString *serviceId = [command.arguments objectAtIndex:0];
-  NSArray *connectedDevices = [manager retrieveConnectedPeripheralsWithServices:@[[CBUUID UUIDWithString:serviceId]]];
+  NSMutableArray* peripheralsOut = [[NSMutableArray alloc] init];
+
+
+  NSArray *connectedDevices = [manager retrieveConnectedPeripheralsWithServices:@[[CBUUID UUIDWithString:@"1901"]]];
+  for(CBPeripheral* peripheral in connectedDevices) {
+    NSMutableDictionary* peripheralOut = [NSMutableDictionary dictionary];
+    [peripheralsOut addObject:peripheral.identifier.UUIDString];
+  }
+
   CDVPluginResult *pluginResult = nil;
-  pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:connectedDevices];
+  pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:peripheralsOut];
+  [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 
 }
+
+
 
 // disconnect: function (device_id, success, failure) {
 - (void)disconnect:(CDVInvokedUrlCommand*)command {
