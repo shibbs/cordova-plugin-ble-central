@@ -379,10 +379,9 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
         JSONArray json = new JSONArray();
 
-        // do we care about consistent order? will peripherals.values() be in order?
         for (Map.Entry<String, Peripheral> entry : peripherals.entrySet()) {
             Peripheral peripheral = entry.getValue();
-            json.put(peripheral.asJSONObject());
+            json.put(peripheral.device.getAddress());
         }
 
         PluginResult result = new PluginResult(PluginResult.Status.OK, json);
