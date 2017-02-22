@@ -256,16 +256,19 @@ NSURL *filePath = NULL;
 
 //enable stub
 - (void)enable:(CDVInvokedUrlCommand*)command {
+    CBPeripheral *peripheral = nil;
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 //enable stub
 - (void)disable:(CDVInvokedUrlCommand*)command {
+    CBPeripheral *peripheral = nil;
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 //enable stub
 - (void)increaseMTU:(CDVInvokedUrlCommand*)command {
+    CBPeripheral *peripheral = nil;
     pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
