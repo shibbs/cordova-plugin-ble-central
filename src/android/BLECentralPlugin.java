@@ -140,7 +140,7 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             if (peripherals.containsKey(macAddress) && !peripherals.get(macAddress).isConnected()) {
                 disconnect(callbackContext, macAddress);
             } else {
-                LOG.v("Already Disconnected");
+                LOG.v("In Ble Disconnect", "Already Disconnected");
                 callbackContext.success();
             }
         } else if (action.equals(READ)) {
