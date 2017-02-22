@@ -254,6 +254,22 @@ NSURL *filePath = NULL;
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
+//enable stub
+- (void)enable:(CDVInvokedUrlCommand*)command {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+//enable stub
+- (void)disable:(CDVInvokedUrlCommand*)command {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+//enable stub
+- (void)increaseMTU:(CDVInvokedUrlCommand*)command {
+    pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK];
+    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
 - (void)scan:(CDVInvokedUrlCommand*)command {
 
     NSLog(@"scan");

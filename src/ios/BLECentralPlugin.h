@@ -65,6 +65,10 @@
 - (void)isEnabled:(CDVInvokedUrlCommand *)command;
 - (void)isConnected:(CDVInvokedUrlCommand *)command;
 
+- (void)enable:(CDVInvokedUrlCommand *)command;
+- (void)disable:(CDVInvokedUrlCommand *)command;
+- (void)increaseMTU:(CDVInvokedUrlCommand *)command;
+
 - (void)startStateNotifications:(CDVInvokedUrlCommand *)command;
 - (void)stopStateNotifications:(CDVInvokedUrlCommand *)command;
 
