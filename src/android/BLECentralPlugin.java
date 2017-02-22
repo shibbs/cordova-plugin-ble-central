@@ -64,6 +64,8 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
     private static final String BMTU = "increaseMTU";
 
+    private static final String DISABLE = "disable";
+
     // callbacks
     CallbackContext discoverCallback;
     private CallbackContext enableBluetoothCallback;
@@ -136,13 +138,10 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             connect(callbackContext, macAddress);
 
         } else if (action.equals(DISCONNECT)) {
+
             String macAddress = args.getString(0);
-            if (peripherals.containsKey(macAddress) && !peripherals.get(macAddress).isConnected()) {
-                disconnect(callbackContext, macAddress);
-            } else {
-                LOG.v("In Ble Disconnect", "Already Disconnected");
-                callbackContext.success();
-            }
+            disconnect(callbackContext, macAddress);
+
         } else if (action.equals(READ)) {
 
             String macAddress = args.getString(0);
@@ -218,6 +217,15 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             String macAddress = args.getString(0);
             int mtu = args.getInt(1);
             bumpMTU(callbackContext, macAddress, mtu);
+        }else if (action.equals(DISABLE)){
+            System.out.println("Disabling the BT adaptor");
+            if (bluetoothAdapter.isEnabled()) {
+                bluetoothAdapter.disable();
+                callbackContext.success();
+            } else{
+                callbackContext.error("Adaptor already disabled");
+            }
+
         }else {
 
             validAction = false;
@@ -266,8 +274,6 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
     private void disconnect(CallbackContext callbackContext, String macAddress) {
 
         Peripheral peripheral = peripherals.get(macAddress);
-        
-        
         if (peripheral != null) {
             peripheral.disconnect();
         }
