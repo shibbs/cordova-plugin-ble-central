@@ -13,6 +13,8 @@
     <repo>https://github.com/don/cordova-plugin-ble-central.git</repo>
     <issue>https://github.com/don/cordova-plugin-ble-central/issues</issue>
 
+    <dependency id="cordova-plugin-compat" version="^1.0.0" />
+
     <js-module src="www/ble.js" name="ble">
         <clobbers target="ble" />
     </js-module>
@@ -33,38 +35,38 @@
 
         <header-file src="src/ios/BLECommandContext.h" target-dir="BLECentralPlugin" />
         <source-file src="src/ios/BLECommandContext.m" target-dir="BLECentralPlugin" />
-        
-        
+
+
         <header-file src="src/ios/DFU/Constants/Utility.h" target-dir="BLECentralPlugin/DFU/Constants" />
         <source-file src="src/ios/DFU/Constants/Utility.m" target-dir="BLECentralPlugin/DFU/Constants" />
-        
+
         <header-file src="src/ios/DFU/DFUImplementation/BLEOperations.h" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
         <source-file src="src/ios/DFU/DFUImplementation/BLEOperations.m" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
-        
+
         <header-file src="src/ios/DFU/DFUImplementation/DFUOperations.h" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
         <source-file src="src/ios/DFU/DFUImplementation/DFUOperations.m" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
-        
+
         <header-file src="src/ios/DFU/DFUImplementation/DFUOperationsDetails.h" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
         <source-file src="src/ios/DFU/DFUImplementation/DFUOperationsDetails.m" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
-        
+
         <header-file src="src/ios/DFU/DFUImplementation/FileOperations.h" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
         <source-file src="src/ios/DFU/DFUImplementation/FileOperations.m" target-dir="BLECentralPlugin/DFU/DFUImplementation" />
-        
+
         <header-file src="src/ios/DFU/DFUViewController/DFUHelper.h" target-dir="BLECentralPlugin/DFU/DFUViewController" />
         <source-file src="src/ios/DFU/DFUViewController/DFUHelper.m" target-dir="BLECentralPlugin/DFU/DFUViewController" />
-        
+
         <header-file src="src/ios/DFU/FileSelection/AccessFileSystem.h" target-dir="BLECentralPlugin/DFU/FileSelection" />
         <source-file src="src/ios/DFU/FileSelection/AccessFileSystem.m" target-dir="BLECentralPlugin/DFU/FileSelection" />
-        
+
         <header-file src="src/ios/DFU/HexToBinConverter/IntelHex2BinConverter.h" target-dir="BLECentralPlugin/DFU/HexToBinConverter" />
         <source-file src="src/ios/DFU/HexToBinConverter/IntelHex2BinConverter.m" target-dir="BLECentralPlugin/DFU/HexToBinConverter" />
-        
+
         <header-file src="src/ios/DFU/JSONParser/InitData.h" target-dir="BLECentralPlugin/DFU/JSONParser" />
         <source-file src="src/ios/DFU/JSONParser/InitData.m" target-dir="BLECentralPlugin/DFU/JSONParser" />
-        
+
         <header-file src="src/ios/DFU/JSONParser/JSONParser.h" target-dir="BLECentralPlugin/DFU/JSONParser" />
         <source-file src="src/ios/DFU/JSONParser/JSONParser.m" target-dir="BLECentralPlugin/DFU/JSONParser" />
-        
+
 
         <!-- frameworks -->
         <framework src="CoreBluetooth.framework" />
@@ -79,6 +81,7 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
             <uses-permission android:name="android.permission.BLUETOOTH"/>
             <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
         </config-file>
