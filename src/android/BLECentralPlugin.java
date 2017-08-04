@@ -12,6 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+//FLAH SAH this is the updated plugin as of AUg 4
 package com.megster.cordova.ble.central;
 
 import android.Manifest;
