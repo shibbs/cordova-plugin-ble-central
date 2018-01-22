@@ -74,7 +74,7 @@ module.exports = {
    list: function (service_id, success, failure) {
         cordova.exec(success, failure, 'BLE', 'list', [service_id]);
     },
-    
+
     connect: function (device_id, success, failure) {
         var successWrapper = function(peripheral) {
             convertToNativeJS(peripheral);
@@ -140,6 +140,9 @@ module.exports = {
 
     enable: function (success, failure) {
         cordova.exec(success, failure, "BLE", "enable", []);
+    },
+    disable: function (success, failure) {
+        cordova.exec(success, failure, "BLE", "disable", []);
     },
 
     increaseMTU: function (device_id, mtu, success, failure){

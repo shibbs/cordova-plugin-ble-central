@@ -68,6 +68,8 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
 
     private static final String BMTU = "increaseMTU";
 
+    private static final String DISABLE = "disable";
+
     // callbacks
     CallbackContext discoverCallback;
     private CallbackContext enableBluetoothCallback;
@@ -228,6 +230,15 @@ public class BLECentralPlugin extends CordovaPlugin implements BluetoothAdapter.
             String macAddress = args.getString(0);
             int mtu = args.getInt(1);
             bumpMTU(callbackContext, macAddress, mtu);
+        }else if (action.equals(DISABLE)){
+            System.out.println("Disabling the BT adaptor");
+            if (bluetoothAdapter.isEnabled()) {
+                bluetoothAdapter.disable();
+                callbackContext.success();
+            } else{
+                callbackContext.error("Adaptor already disabled");
+            }
+
         }else {
 
             validAction = false;
